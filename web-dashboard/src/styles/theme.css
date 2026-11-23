@@ -1,0 +1,94 @@
+:root {
+  /* Urmia Lake Observatory Scientific Palette */
+  --ulo-deep-navy: #0B1F3A;
+  --ulo-lake-blue: #1565C0;
+  --ulo-turquoise: #00ACC1;
+  --ulo-salt-white: #F8FAFC;
+  --ulo-earth-sand: #D4B483;
+  --ulo-neutral-gray: #64748B;
+  --ulo-border: #CBD5E1;
+  --ulo-surface: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html[lang="fa"] body {
+  font-family: "Vazirmatn", system-ui, -apple-system, sans-serif;
+}
+
+html[lang="en"] body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--ulo-salt-white);
+  color: var(--ulo-deep-navy);
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+.ulo-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 1.5rem;
+}
+
+.ulo-header {
+  background: linear-gradient(135deg, var(--ulo-deep-navy), var(--ulo-lake-blue));
+  color: var(--ulo-salt-white);
+  padding: 1.75rem;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ulo-lang-btn {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.ulo-card {
+  background: var(--ulo-surface);
+  border: 1px solid var(--ulo-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.ulo-badge-unavailable {
+  display: inline-block;
+  background: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #F59E0B;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.ulo-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--ulo-border);
+  padding-top: 1.25rem;
+  color: var(--ulo-neutral-gray);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}

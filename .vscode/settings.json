@@ -1,0 +1,7 @@
+{
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "python.defaultInterpreterPath": "${workspaceFolder}/science-engine/.venv/Scripts/python.exe",
+  "editor.formatOnSave": true,
+  "editor.unicodeHighlight.nonBasicASCII": false
+}
