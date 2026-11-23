@@ -1,0 +1,219 @@
+.ulo-map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 68vh;
+  min-height: 500px;
+  font-family: 'Vazirmatn', 'Inter', 'Tahoma', sans-serif;
+  background: #0b1120;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.ulo-map-wrapper.is-rtl {
+  direction: rtl;
+}
+
+.ulo-map-wrapper.is-ltr {
+  direction: ltr;
+}
+
+.ulo-map-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.ulo-layer-panel {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 5;
+  width: 320px;
+  max-height: calc(100% - 28px);
+  overflow-y: auto;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: #f8fafc;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+.ulo-map-wrapper.is-rtl .ulo-layer-panel {
+  text-align: right;
+}
+
+.ulo-map-wrapper.is-ltr .ulo-layer-panel {
+  text-align: left;
+}
+
+.ulo-panel-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  color: #38bdf8;
+}
+
+.ulo-section-label {
+  font-size: 0.76rem;
+  color: #94a3b8;
+  margin: 10px 0 6px 0;
+  display: block;
+}
+
+.ulo-basemap-select {
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(30, 41, 59, 0.95);
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.ulo-layer-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 8px 0;
+  font-size: 0.8rem;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1.5;
+}
+
+.ulo-legend-swatch {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.ulo-layer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.ulo-layer-name {
+  color: #e2e8f0;
+}
+
+.ulo-layer-desc {
+  font-size: 0.7rem;
+  color: #94a3b8;
+}
+
+.ulo-coords-bar {
+  position: absolute;
+  bottom: 42px;
+  left: 14px;
+  z-index: 5;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  color: #e2e8f0;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 0.74rem;
+  direction: ltr;
+  font-family: monospace;
+}
+
+.ulo-status-badge {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.ulo-error-box {
+  margin-top: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: rgba(239, 68, 68, 0.18);
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  color: #fca5a5;
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.maplibregl-popup-content {
+  background: rgba(15, 23, 42, 0.96) !important;
+  color: #f8fafc !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  font-family: 'Vazirmatn', 'Inter', 'Tahoma', sans-serif !important;
+  padding: 10px 12px !important;
+}
+
+.ulo-popup-body.is-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ulo-popup-body.is-ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+.ulo-popup-title {
+  font-weight: 700;
+  color: #38bdf8;
+  font-size: 0.85rem;
+  margin-bottom: 3px;
+  padding-inline-end: 16px;
+}
+
+.ulo-popup-layer {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.ulo-popup-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.74rem;
+}
+
+.ulo-popup-table td {
+  padding: 3px 5px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  vertical-align: top;
+}
+
+.ulo-popup-key {
+  color: #94a3b8;
+  font-weight: 600;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.maplibregl-popup-close-button {
+  color: #94a3b8 !important;
+  font-size: 1.1rem;
+  padding: 2px 6px !important;
+}
+
+.maplibregl-ctrl-attrib,
+.maplibregl-ctrl-scale {
+  font-family: 'Vazirmatn', 'Inter', 'Tahoma', sans-serif !important;
+  font-size: 0.65rem !important;
+}
+
+@media (max-width: 820px) {
+  .ulo-layer-panel {
+    width: 255px;
+    padding: 10px 12px;
+  }
+  .ulo-map-wrapper {
+    height: 62vh;
+  }
+}

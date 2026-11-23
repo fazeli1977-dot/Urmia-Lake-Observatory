@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-
-type Lang = 'fa' | 'en';
+import UrmiaMap from './components/UrmiaMap';
+import type { MapLang } from './components/UrmiaMap';
 
 export default function App() {
-  const [lang, setLang] = useState<Lang>('fa');
+  const [lang, setLang] = useState<MapLang>('fa');
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -23,7 +23,7 @@ export default function App() {
           </h1>
           <p>
             {isFa
-              ? 'زیرساخت پایش سنجش‌ازدور، هیدرولوژی، اقلیم و اکولوژی حوضه آبریز دریاچه ارومیه'
+              ? 'زیرساخت پایش سنجش از دور، هیدرولوژی، اقلیم و اکولوژی حوضه آبریز دریاچه ارومیه'
               : 'Remote Sensing, Hydrology, Climate & Ecological Intelligence for Lake Urmia Basin'}
           </p>
         </div>
@@ -36,21 +36,25 @@ export default function App() {
         </button>
       </header>
 
+      <section className="ulo-map-section">
+        <UrmiaMap lang={lang} />
+      </section>
+
       <main className="ulo-card">
         <h2>
           {isFa
-            ? 'وضعیت زیرساخت سامانه (فاز ۱ تکمیل شد)'
-            : 'System Infrastructure Status (Phase 1 Initialized)'}
+            ? 'وضعیت زیرساخت سامانه (گام ۲.۲ - نقشه تعاملی چندلایه)'
+            : 'System Infrastructure Status (Step 2.2 - Interactive Multi-layer Map)'}
         </h2>
         <p style={{ marginTop: '0.75rem', marginBottom: '1rem' }}>
           {isFa
-            ? 'اسکلت علمی پایتون و رابط کاربری دوزبانه آماده است. مطابق اصل صداقت علمی سامانه، پیش از اتصال به داده‌های واقعی ماهواره‌ای و اقلیمی در فازهای ۲ و ۳، هیچ داده نمایشی یا ساختگی نمایش داده نمی‌شود.'
-            : 'The Python scientific engine and bilingual UI shell are operational. Per strict scientific integrity rules, no mock or fabricated values are displayed prior to live satellite and climate ingestion in Phases 2 & 3.'}
+            ? 'پنج لایه علمی GeoJSON شامل مرز حوضه آبریز، زیرحوضه‌ها، پهنه مرجع اکولوژیک دریاچه، رودخانه‌های اصلی و نقاط شاخص پایش بر روی نقشه پایه ماهواره‌ای سوار شده‌اند. مطابق اصل صداقت علمی، هیچ داده نمایشی یا ساختگی در جدول‌ها و شاخص‌ها نمایش داده نمی‌شود.'
+            : 'Five scientific GeoJSON layers (basin boundary, sub-basins, ecological lake reference extent, major rivers, monitoring landmarks) are mounted on a satellite basemap. Per strict scientific integrity rules, no mock or fabricated values are displayed.'}
         </p>
         <span className="ulo-badge-unavailable">
           {isFa
-            ? 'وضعیت داده فعلی: در انتظار دریافت داده معتبر واقعی (Data Unavailable)'
-            : 'Current Data Status: Data Unavailable (Awaiting Phase 2–3 Ingestion)'}
+            ? 'وضعیت داده فعلی: لایه‌های مرجع مکانی فعال — سری‌های زمانی در انتظار دریافت داده معتبر'
+            : 'Current Data Status: Reference spatial layers active — time series awaiting verified ingestion'}
         </span>
       </main>
 

@@ -1,0 +1,34 @@
+{
+  "generated_at_utc": "2026-11-23T14:42:13Z",
+  "geographic_crs": "EPSG:4326",
+  "metric_crs": "EPSG:32638",
+  "summary_metrics": {
+    "lake_reference_bed_area_km2": 4321.02,
+    "watershed_area_km2": 51709.81,
+    "mapped_rivers_count": 8,
+    "mapped_rivers_total_length_km": 800.89,
+    "monitoring_landmarks_count": 9
+  },
+  "layers": {
+    "lake_boundary": {
+      "file": "/geo/urmia_lake_boundary.geojson",
+      "feature_count": 1
+    },
+    "watershed_basin": {
+      "file": "/geo/urmia_watershed_basin.geojson",
+      "feature_count": 1
+    },
+    "subbasins": {
+      "file": "/geo/urmia_subbasins.geojson",
+      "feature_count": 4
+    },
+    "major_rivers": {
+      "file": "/geo/urmia_major_rivers.geojson",
+      "feature_count": 8
+    },
+    "monitoring_landmarks": {
+      "file": "/geo/urmia_monitoring_landmarks.geojson",
+      "feature_count": 9
+    }
+  }
+}

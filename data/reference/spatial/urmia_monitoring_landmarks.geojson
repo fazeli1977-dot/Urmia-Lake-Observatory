@@ -1,0 +1,177 @@
+{
+  "type": "FeatureCollection",
+  "name": "urmia_monitoring_landmarks",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kalantari_causeway_gap",
+        "name_fa": "شکاف هیدرولیکی و پل میانگذر شهید کلانتری",
+        "name_en": "Shahid Kalantari Causeway Hydraulic Bridge",
+        "category": "hydraulic_structure",
+        "lon": 45.2856,
+        "lat": 37.7914,
+        "description_fa": "مرز تبادل هیدرولیکی نیمه شمالی و جنوبی دریاچه؛ گلوگاه کلیدی چرخش آب و گرادیان شوری."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.2856,
+          37.7914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kaboudan_island",
+        "name_fa": "جزیره کبودان (قویون‌داغی) - پناهگاه حیات‌وحش",
+        "name_en": "Kaboudan Island National Park Core",
+        "category": "ecological_island",
+        "lon": 45.625,
+        "lat": 37.475,
+        "description_fa": "بزرگ‌ترین جزیره دریاچه ارومیه با چشمه آب شیرین؛ زیستگاه قوچ و میش ارمنی و شاخص اتصال پل زمینی شوره."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.625,
+          37.475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ashk_island",
+        "name_fa": "جزیره اشک - زیستگاه گوزن زرد ایرانی",
+        "name_en": "Ashk Island Ecological Sanctuary",
+        "category": "ecological_island",
+        "lon": 45.515,
+        "lat": 37.382,
+        "description_fa": "زیستگاه اصلی گوزن زرد ایرانی؛ بسیار حساس به تشکیل پل نمکی با ساحل در ترازهای بحرانی."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.515,
+          37.382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "espir_island",
+        "name_fa": "جزیره اسپیر",
+        "name_en": "Espir Island",
+        "category": "ecological_island",
+        "lon": 45.568,
+        "lat": 37.605,
+        "description_fa": "یکی از جزایر چهارگانه اصلی پارک ملی دریاچه ارومیه در بخش میانی-جنوبی."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.568,
+          37.605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "golmankhaneh_gauge",
+        "name_fa": "ایستگاه ترازسنجی بندر گلمانخانه (ارومیه)",
+        "name_en": "Bandar Golmankhaneh Hydrometric Station",
+        "category": "hydrometric_station",
+        "lon": 45.2492,
+        "lat": 37.5994,
+        "description_fa": "ایستگاه مرجع پایش تراز سطح آب دریاچه در ساحل غربی."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.2492,
+          37.5994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sharafkhaneh_gauge",
+        "name_fa": "ایستگاه ترازسنجی بندر شرفخانه (شمال دریاچه)",
+        "name_en": "Bandar Sharafkhaneh Hydrometric Station",
+        "category": "hydrometric_station",
+        "lon": 45.4839,
+        "lat": 38.1725,
+        "description_fa": "ایستگاه تاریخی پایش تراز آب در حوضه شمالی دریاچه ارومیه."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4839,
+          38.1725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "zarrineh_estuary",
+        "name_fa": "مصب و دلتای زرینه‌رود (تغذیه‌کننده اصلی جنوب)",
+        "name_en": "Zarrineh Rud Delta & Inflow Mouth",
+        "category": "river_estuary",
+        "lon": 45.735,
+        "lat": 37.135,
+        "description_fa": "مهم‌ترین ورودی آب شیرین دریاچه ارومیه (تأمین‌کننده بیش از ۴۰ درصد آورد سطحی سالانه)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.735,
+          37.135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "aji_chay_delta",
+        "name_fa": "پهنه دلتایی تلخه‌رود (آجی‌چای) و کانون گردوغبار شرق",
+        "name_en": "Aji Chay Delta & Eastern Salt/Dust Hotspot",
+        "category": "dust_hotspot",
+        "lon": 45.82,
+        "lat": 37.92,
+        "description_fa": "پهنه کم‌عمق شرقی؛ یکی از حساس‌ترین کانون‌های خیزش ریزگرد نمکی به سمت کلان‌شهر تبریز و آذرشهر."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.82,
+          37.92
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kanisib_inlet_zone",
+        "name_fa": "خروجی سامانه انتقال آب کانی‌سیب به گدارچای / جنوب دریاچه",
+        "name_en": "Kani Sib Water Transfer Release Zone",
+        "category": "water_transfer",
+        "lon": 45.7744,
+        "lat": 36.9922,
+        "description_fa": "مسیر رهاسازی آب انتقالی جنوب حوضه به سمت پهنه جنوبی دریاچه ارومیه."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.7744,
+          36.9922
+        ]
+      }
+    }
+  ]
+}

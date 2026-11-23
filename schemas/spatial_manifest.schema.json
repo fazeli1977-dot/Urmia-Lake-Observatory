@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ULO Spatial Infrastructure Manifest",
+  "type": "object",
+  "required": [
+    "generated_at_utc",
+    "geographic_crs",
+    "metric_crs",
+    "layers",
+    "summary_metrics"
+  ],
+  "properties": {
+    "generated_at_utc": { "type": "string" },
+    "geographic_crs": { "const": "EPSG:4326" },
+    "metric_crs": { "const": "EPSG:32638" },
+    "summary_metrics": {
+      "type": "object",
+      "required": [
+        "lake_reference_bed_area_km2",
+        "watershed_area_km2",
+        "mapped_rivers_count",
+        "mapped_rivers_total_length_km",
+        "monitoring_landmarks_count"
+      ],
+      "properties": {
+        "lake_reference_bed_area_km2": { "type": "number", "minimum": 4000, "maximum": 6800 },
+        "watershed_area_km2": { "type": "number", "minimum": 45000, "maximum": 58000 },
+        "mapped_rivers_count": { "type": "integer", "minimum": 1 },
+        "mapped_rivers_total_length_km": { "type": "number", "minimum": 50 },
+        "monitoring_landmarks_count": { "type": "integer", "minimum": 5 }
+      }
+    },
+    "layers": {
+      "type": "object",
+      "required": [
+        "lake_boundary",
+        "watershed_basin",
+        "subbasins",
+        "major_rivers",
+        "monitoring_landmarks"
+      ]
+    }
+  }
+}
