@@ -1,22 +1,18 @@
-# Project Status — Urmia Lake Observatory (ULO)
+# PROJECT STATUS — URMIA LAKE OBSERVATORY (ULO)
+Last Updated (UTC): `2026-11-24T14:52:26Z`
 
-- **Phase 0 (Feasibility & Architecture):** Completed
-- **Phase 1 (Desktop Project Initialization):** Completed
-- **Phase 2 (Geospatial Infrastructure):** Completed
-- **Phase 3 (Data Source Integration):** Completed
-  - Integrated CDSE, Hydroweb, G-REALM, and ERA5 live data (`schema 3.2.0`).
-- **Phase 4 (Scientific Processing):** Completed
-  - Non-parametric trend engine (`Mann-Kendall` with tie-correction & time-aware `Sen's Slope`).
-  - Hypsometric exposed salt-playa calculator, halite-capped salinity/Artemia model, ERA5 aridity stress, and composite Salt Dust Hazard Index (`run_phase4_analytics.py` -> `lake_scientific_analytics_latest.json`, `schema 4.0.0`).
-  - Verified via automated `pytest` suite (`test_phase4_analytics.py`).
-- **Phase 5 (Dashboard & Visualization):** Ready to Start
-- **Phase 6 (GIS & Interactive Mapping):** Pending
-
-## Phase 5: Scientific Bilingual Dashboard & Visualization (Completed)
-- **Status:** Phase 5: Completed
-- **Delivered Components:**
-  - scripts/sync_dashboard_data.py synchronizing verified Phase 3 & Phase 4 JSON outputs to web-dashboard/public/data/.
-  - UloLogo.tsx custom vector emblem (Lake Urmia silhouette, water waves, satellite orbit).
-  - KpiGrid.tsx 12 provenance-backed bilingual KPI cards with explicit Data Unavailable handling for un-ingested raster layers.
-  - ScientificCharts.tsx interactive Recharts suite (Altimetry Level + Sen Slope + Ecological Target, Area/Volume Co-Evolution, ERA5 Monthly Precip/ET0/Temp, Bathymetric Hypsometry Curve).
-  - EcologicalAnalyticsPanel.tsx Mann-Kendall & Theil-Sen statistical diagnostics table, Artemia/Halite salinity status, Salt-Dust Hazard hotspots, scientific caveats, and CSV/JSON export.
+## All Phases Completed (Phases 0 through 10)
+- **Phase 0 — Feasibility & Architecture**: Completed
+- **Phase 1 — Desktop Project Initialization**: Completed (`Desktop/Urmia-Lake-Observatory`)
+- **Phase 2 — Geospatial Infrastructure**: Completed (20 verified GeoJSON layers; OSM/HydroSHEDS real geometries)
+- **Phase 3 — Data Source Integration**: Completed (Hydroweb/CLMS, Copernicus STAC, ECMWF ERA5, OSM)
+- **Phase 4 — Scientific Processing**: Completed (Mann-Kendall, Theil-Sen slope, hypsometry, salinity & dust risk)
+- **Phase 5 — Bilingual Dashboard**: Completed (Persian RTL Vazirmatn + English LTR Inter, 12 KPIs, 4 ECharts)
+- **Phase 6 — GIS & Mapping**: Completed (MapLibre GL 13-layer WebGIS, basemaps, opacity controls, live STAC)
+- **Phase 7 — Scientific Research Center**: Completed (OpenAlex/Crossref Library, GBIF/Ramsar #38/UNESCO MAB, DSS)
+- **Phase 8 — Data Management and Reports**: Completed (8-format local validator, CSV/XLSX/JSON/GeoJSON/PNG & bilingual PDF)
+- **Phase 9 — Quality Assurance**: Completed (17/17 automated `pytest` tests passing; see `QA_REPORT.md`)
+- **Phase 10 — Deployment & Automation**: **Completed**
+  - GitHub Pages CI/CD ready (`https://fazeli1977-dot.github.io/Urmia-Lake-Observatory/`)
+  - Cloudflare Pages ready (`https://urmia-lake-observatory.pages.dev/`)
+  - Automated rollback-protected weekly data pipeline (`.github/workflows/data-update-pipeline.yml`)

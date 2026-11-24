@@ -1,0 +1,40 @@
+name: Scheduled Scientific Data Update Pipeline
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-observatory-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Minimal Pipeline Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pytest jsonschema shapely
+
+      - name: Run Automated Safe Data Update Pipeline (With Rollback Protection)
+        run: python scripts/run_automated_data_update.py
+
+      - name: Validate Updated Datasets Before Commit
+        run: pytest science-engine/tests/test_phase9_qa_scientific_security.py -v
+
+      - name: Commit Validated Data Updates (If Changed)
+        run: |
+          git config user.name "ULO Automated Data Bot"
+          git config user.email "alirezafazeli@live.com"
+          git add web-dashboard/public/data data/processed data/metadata/pipeline_update_log.json
+          git diff --staged --quiet || git commit -m "chore(data): automated validated observatory data refresh"
+          git push

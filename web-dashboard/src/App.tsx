@@ -35,8 +35,8 @@ export default function App() {
       try {
         setLoading(true);
         const [hydroRes, anaRes] = await Promise.all([
-          fetch('/data/lake_hydrology_latest.json'),
-          fetch('/data/lake_scientific_analytics_latest.json')
+          fetch(`${import.meta.env.BASE_URL}data/lake_hydrology_latest.json`),
+          fetch(`${import.meta.env.BASE_URL}data/lake_scientific_analytics_latest.json`)
         ]);
         if (!hydroRes.ok || !anaRes.ok) {
           throw new Error(`HTTP ${hydroRes.status} / ${anaRes.status}`);

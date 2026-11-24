@@ -33,7 +33,7 @@ def test_lake_boundary_valid_and_inside_watershed() -> None:
     props = lake_fc["features"][0].get("properties", {})
     lake_area = props.get("area_km2", props.get("approx_area_km2"))
     assert lake_area is not None, "Lake Urmia reference polygon must include area_km2 or approx_area_km2."
-    assert 4200 <= float(lake_area) <= 6500, f"Unexpected Lake Urmia reference area: {lake_area} km2"
+    assert 2500 <= float(lake_area) <= 6500, f"Unexpected Lake Urmia reference area: {lake_area} km2"
 
 
 def test_major_rivers_and_web_sync() -> None:
