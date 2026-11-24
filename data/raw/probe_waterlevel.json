@@ -1,0 +1,994 @@
+{
+  "cdse": {
+    "status": 200,
+    "hits": [
+      {
+        "id": "clms_lc_global_100m_yearly_v3_cog",
+        "title": "CLMS Land Cover (LC) Global 100m yearly V3 (COG)"
+      },
+      {
+        "id": "clms_lcm_global_10m_yearly_v1_cog",
+        "title": "CLMS Land Cover Map (LCM) Global 10m yearly V1 (COG)"
+      },
+      {
+        "id": "clms_lie_baltic_250m_daily_v1_cog",
+        "title": "CLMS Lake Ice Extent (LIE) Baltic 250m daily V1 (COG)"
+      },
+      {
+        "id": "clms_lie_baltic_250m_daily_v1_nc",
+        "title": "CLMS Lake Ice Extent (LIE) Baltic 250m daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_lie_europe_250m_daily_v2_cog",
+        "title": "CLMS Lake Ice Extent (LIE) Europe 250m daily V2 (COG)"
+      },
+      {
+        "id": "clms_lie_europe_250m_daily_v2_nc",
+        "title": "CLMS Lake Ice Extent (LIE) Europe 250m daily V2 (NetCDF)"
+      },
+      {
+        "id": "clms_lie_global_500m_daily_v2_cog",
+        "title": "CLMS Lake Ice Extent (LIE) Global 500m daily V2 (COG)"
+      },
+      {
+        "id": "clms_lie_global_500m_daily_v2_nc",
+        "title": "CLMS Lake Ice Extent (LIE) Global 500m daily V2 (NetCDF)"
+      },
+      {
+        "id": "clms_lie_northernhemisphere_500m_daily_v1_cog",
+        "title": "CLMS Lake Ice Extent (LIE) Northern Hemisphere 500m daily V1 (COG)"
+      },
+      {
+        "id": "clms_lie_northernhemisphere_500m_daily_v1_nc",
+        "title": "CLMS Lake Ice Extent (LIE) Northern Hemisphere 500m daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_lswt-nrt_global_1km_10daily_v1_cog",
+        "title": "CLMS Lake Surface Water Temperature (LSWT) NRT Global 1km 10-daily V1 (COG)"
+      },
+      {
+        "id": "clms_lswt-nrt_global_1km_10daily_v1_nc",
+        "title": "CLMS Lake Surface Water Temperature (LSWT) NRT Global 1km 10-daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_lswt-offline_global_1km_10daily_v1_cog",
+        "title": "CLMS Lake Surface Water Temperature (LSWT) Offline Global 1km 10-daily V1 (COG)"
+      },
+      {
+        "id": "clms_lswt-offline_global_1km_10daily_v1_nc",
+        "title": "CLMS Lake Surface Water Temperature (LSWT) Offline Global 1km 10-daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_lwq-nrt_global_100m_10daily_v1_cog",
+        "title": "CLMS Lake Water Quality (LWQ) NRT Global 100m 10-daily V1 (COG)"
+      },
+      {
+        "id": "clms_lwq-nrt_global_100m_10daily_v1_nc",
+        "title": "CLMS Lake Water Quality (LWQ) NRT Global 100m 10-daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_lwq-nrt_global_100m_10daily_v2_cog",
+        "title": "CLMS Lake Water Quality (LWQ) NRT Global 100m 10-daily V2 (COG)"
+      },
+      {
+        "id": "clms_lwq-nrt_global_100m_10daily_v2_nc",
+        "title": "CLMS Lake Water Quality (LWQ) NRT Global 100m 10-daily V2 (NetCDF)"
+      },
+      {
+        "id": "clms_lwq-nrt_global_300m_10daily_v1_cog",
+        "title": "CLMS Lake Water Quality (LWQ) NRT Global 300m 10-daily V1 (COG)"
+      },
+      {
+        "id": "clms_lwq-nrt_global_300m_10daily_v1_nc",
+        "title": "CLMS Lake Water Quality (LWQ) NRT Global 300m 10-daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_lwq-nrt_global_300m_10daily_v2_cog",
+        "title": "CLMS Lake Water Quality (LWQ) NRT Global 300m 10-daily V2 (COG)"
+      },
+      {
+        "id": "clms_lwq-nrt_global_300m_10daily_v2_nc",
+        "title": "CLMS Lake Water Quality (LWQ) NRT Global 300m 10-daily V2 (NetCDF)"
+      },
+      {
+        "id": "clms_lwq-reproc_global_300m_10daily_v1_cog",
+        "title": "CLMS Lake Water Quality (LWQ) Reproc Global 300m 10-daily V1 (COG)"
+      },
+      {
+        "id": "clms_lwq-reproc_global_300m_10daily_v1_nc",
+        "title": "CLMS Lake Water Quality (LWQ) Reproc Global 300m 10-daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_ssm_europe_1km_daily_v1_cog",
+        "title": "CLMS Surface Soil Moisture (SSM) Europe 1km daily v1 (COG)"
+      },
+      {
+        "id": "clms_ssm_europe_1km_daily_v1_nc",
+        "title": "CLMS Surface Soil Moisture (SSM) Europe 1km daily v1 (NetCDF)"
+      },
+      {
+        "id": "clms_swe_northernhemisphere_5km_daily_v1_cog",
+        "title": "CLMS Snow Water Equivalent (SWE) Northern Hemisphere 5km daily V1 (COG)"
+      },
+      {
+        "id": "clms_swe_northernhemisphere_5km_daily_v1_nc",
+        "title": "CLMS Snow Water Equivalent (SWE) Northern Hemisphere 5km daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_swe_northernhemisphere_5km_daily_v2_cog",
+        "title": "CLMS Snow Water Equivalent (SWE) Northern Hemisphere 5km daily V2 (COG)"
+      },
+      {
+        "id": "clms_swe_northernhemisphere_5km_daily_v2_nc",
+        "title": "CLMS Snow Water Equivalent (SWE) Northern Hemisphere 5km daily V2 (NetCDF)"
+      },
+      {
+        "id": "clms_swi-static_global_12.5km_daily_v3_cog",
+        "title": "CLMS Soil Water Index (SWI) Static Layers Global 12.5km V3 (COG)"
+      },
+      {
+        "id": "clms_swi-static_global_12.5km_daily_v3_nc",
+        "title": "CLMS Soil Water Index (SWI) Static Layers Global 12.5km V3 (NetCDF)"
+      },
+      {
+        "id": "clms_swi-timeseries_global_12.5km_daily_v3_nc",
+        "title": "CLMS Soil Water Index (SWI) Timeseries Global 12.5km V3 (NetCDF)"
+      },
+      {
+        "id": "clms_swi-timeseries_global_12.5km_daily_v4_nc",
+        "title": "CLMS Soil Water Index (SWI) Timeseries Global 12.5km V4 (NetCDF)"
+      },
+      {
+        "id": "clms_swi_europe_1km_daily_v1_cog",
+        "title": "CLMS Soil Water Index (SWI) Europe 1km daily V1 (COG)"
+      },
+      {
+        "id": "clms_swi_europe_1km_daily_v1_nc",
+        "title": "CLMS Soil Water Index (SWI) Europe 1km daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_swi_europe_1km_daily_v2_cog",
+        "title": "CLMS Soil Water Index (SWI) Europe 1km daily V2 (COG)"
+      },
+      {
+        "id": "clms_swi_europe_1km_daily_v2_nc",
+        "title": "CLMS Soil Water Index (SWI) Europe 1km daily V2 (NetCDF)"
+      },
+      {
+        "id": "clms_swi_global_12.5km_10daily_v3_cog",
+        "title": "CLMS Soil Water Index (SWI) Global 12.5km 10-daily V3 (COG)"
+      },
+      {
+        "id": "clms_swi_global_12.5km_10daily_v3_nc",
+        "title": "CLMS Soil Water Index (SWI) Global 12.5km 10-daily V3 (NetCDF)"
+      },
+      {
+        "id": "clms_swi_global_12.5km_10daily_v4_cog",
+        "title": "CLMS Soil Water Index (SWI) Global 12.5km 10-daily V4 (COG)"
+      },
+      {
+        "id": "clms_swi_global_12.5km_10daily_v4_nc",
+        "title": "CLMS Soil Water Index (SWI) Global 12.5km 10-daily V4 (NetCDF)"
+      },
+      {
+        "id": "clms_swi_global_12.5km_daily_v3_cog",
+        "title": "CLMS Soil Water Index (SWI) Global 12.5km daily V3 (COG)"
+      },
+      {
+        "id": "clms_swi_global_12.5km_daily_v3_nc",
+        "title": "CLMS Soil Water Index (SWI) Global 12.5km daily V3 (NetCDF)"
+      },
+      {
+        "id": "clms_swi_global_12.5km_daily_v4_cog",
+        "title": "CLMS Soil Water Index (SWI) Global 12.5km daily V4 (COG)"
+      },
+      {
+        "id": "clms_swi_global_12.5km_daily_v4_nc",
+        "title": "CLMS Soil Water Index (SWI) Global 12.5km daily V4 (NetCDF)"
+      },
+      {
+        "id": "clms_vlcc_cropping-seasons_europe_10m_yearly_v1",
+        "title": "CLMS VLCC Cropping Seasons Yearly (CPCSY) Europe 10m yearly V1 (COG)"
+      },
+      {
+        "id": "clms_vlcc_grassland-mowing-dates_europe_10m_yearly_v1",
+        "title": "CLMS VLCC Grassland Mowing Dates (GRAMD) Europe 10m yearly V1 (COG)"
+      },
+      {
+        "id": "clms_vlcc_main-crop-duration_europe_10m_yearly_v1",
+        "title": "CLMS VLCC Main Crop Duration (CPMCD) Europe 10m yearly V1 (COG)"
+      },
+      {
+        "id": "clms_vlcc_secondary-crop-duration_europe_10m_yearly_v1",
+        "title": "CLMS VLCC Secondary Crops Duration (CPSCD) Europe 10m yearly V1 (COG)"
+      },
+      {
+        "id": "clms_wb_global_100m_monthly_v1_cog",
+        "title": "CLMS Water Bodies (WB) Global 100m monthly V1 (COG)"
+      },
+      {
+        "id": "clms_wb_global_100m_monthly_v1_nc",
+        "title": "CLMS Water Bodies (WB) Global 100m monthly V1 (NetCDF)"
+      },
+      {
+        "id": "clms_wb_global_1km_10daily_v2_cog",
+        "title": "CLMS Water Bodies (WB) Global 1km 10-daily V2 (COG)"
+      },
+      {
+        "id": "clms_wb_global_1km_10daily_v2_nc",
+        "title": "CLMS Water Bodies (WB) Global 1km 10-daily V2 (NetCDF)"
+      },
+      {
+        "id": "clms_wb_global_300m_10daily_v1_cog",
+        "title": "CLMS Water Bodies (WB) Global 300m 10-daily V1 (COG)"
+      },
+      {
+        "id": "clms_wb_global_300m_10daily_v1_nc",
+        "title": "CLMS Water Bodies (WB) Global 300m 10-daily V1 (NetCDF)"
+      },
+      {
+        "id": "clms_wb_global_300m_monthly_v2_cog",
+        "title": "CLMS Water Bodies (WB) Global 300m monthly V2 (COG)"
+      },
+      {
+        "id": "clms_wb_global_300m_monthly_v2_nc",
+        "title": "CLMS Water Bodies (WB) Global 300m monthly V2 (NetCDF)"
+      },
+      {
+        "id": "clms_wl-lakes_global_vector_daily_v2_geojson",
+        "title": "CLMS Water Level (WL) Lakes Global vector daily V2 (GeoJSON)"
+      },
+      {
+        "id": "clms_wl-rivers_global_vector_daily_v2_geojson",
+        "title": "CLMS Water Level (WL) Rivers Global vector daily V2 (GeoJSON)"
+      },
+      {
+        "id": "clms_wsi_high-resolution-water-layer_europe_laea_100m_3yearly_v1",
+        "title": "High Resolution Water Layer 2021 (raster 100 m, LAEA projection), Europe, 3-yearly"
+      },
+      {
+        "id": "clms_wsi_high-resolution-water-layer_europe_laea_10m_3yearly_v1",
+        "title": "High Resolution Water Layer 2021 (raster 10 m, LAEA projection), Europe, 3-yearly"
+      },
+      {
+        "id": "clms_wsi_high-resolution-water-layer_europe_utm_10m_3yearly_v1",
+        "title": "High Resolution Water Layer 2021 (raster 10 m), Europe, 3-yearly"
+      },
+      {
+        "id": "clms_wsi_ice-cover-duration_europe_laea_100m_yearly_v1",
+        "title": "Ice Cover Duration 2016-present (raster 100 m, LAEA projection), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_ice-cover-duration_europe_laea_20m_yearly_v1",
+        "title": "Ice Cover Duration 2016-present (raster 20 m, LAEA projection), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_ice-cover-duration_europe_utm_20m_yearly_v1",
+        "title": "Ice Cover Duration 2016-present (raster 20 m), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_snow-phenology-s1-s2_europe_laea_100m_yearly_v1",
+        "title": "Snow Phenology Sentinel-2 & Sentinel-1 2016-present (raster 100 m, LAEA projection), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_snow-phenology-s1-s2_europe_laea_60m_yearly_v1",
+        "title": "Snow Phenology Sentinel-2 & Sentinel-1 2016-present (raster 60 m, LAEA projection), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_snow-phenology-s1-s2_europe_utm_60m_yearly_v1",
+        "title": "Snow Phenology Sentinel-2 & Sentinel-1 2016-present (raster 60 m), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_snow-phenology-s2_europe_laea_100m_yearly_v1",
+        "title": "Snow Phenology Sentinel-2 2016-present (raster 100 m, LAEA projection), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_snow-phenology-s2_europe_laea_20m_yearly_v1",
+        "title": "Snow Phenology Sentinel-2 2016-present (raster 20 m, LAEA projection), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_snow-phenology-s2_europe_utm_20m_yearly_v1",
+        "title": "Snow Phenology Sentinel-2 2016-present (raster 20 m), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_water-cover-duration_europe_laea_100m_yearly_v1",
+        "title": "Water Cover Duration 2016-present (raster 100 m, LAEA projection), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_water-cover-duration_europe_laea_10m_yearly_v1",
+        "title": "Water Cover Duration 2016-present (raster 10 m, LAEA projection), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_water-cover-duration_europe_utm_10m_yearly_v1",
+        "title": "Water Cover Duration 2016-present (raster 10 m), Europe, annually"
+      },
+      {
+        "id": "clms_wsi_water-ice-cover-s1-s2_europe_utm_20m_daily_v1",
+        "title": "Water/Ice Cover S1+S2 2016-present (raster 60 m), Europe, daily"
+      },
+      {
+        "id": "clms_wsi_water-ice-cover-s1_europe_utm_60m_daily_v1",
+        "title": "Water/Ice Cover S1 2016-present (raster 60 m), Europe, daily"
+      },
+      {
+        "id": "clms_wsi_water-ice-cover-s2_europe_utm_20m_daily_v1",
+        "title": "Water/Ice Cover S2 2016-present (raster 20 m), Europe, daily"
+      },
+      {
+        "id": "landsat-c2-l1-oli",
+        "title": "Landsat Collection 2 Level-1 Operational Land Imager"
+      },
+      {
+        "id": "landsat-c2-l1-oli-tirs",
+        "title": "Landsat Collection 2 Level-1 Operational Land Imager/Thermal Infrared"
+      },
+      {
+        "id": "landsat-c2-l1-tirs",
+        "title": "Landsat Collection 2 Level-1 Thermal Infared"
+      },
+      {
+        "id": "modis-aqua-myd10a1",
+        "title": "MODIS Aqua Snow Cover Daily Global 500m"
+      },
+      {
+        "id": "modis-aqua-myd10a2",
+        "title": "MODIS Aqua Snow Cover 8-Day L3 Global 500m"
+      },
+      {
+        "id": "modis-aqua-myd14a1",
+        "title": "MODIS Aqua Thermal Anomalies Fire Daily L3 Global 1km"
+      },
+      {
+        "id": "modis-aqua-myd14a2",
+        "title": "MODIS Aqua Thermal Anomalies Fire 8-Day L3 Global 1km"
+      },
+      {
+        "id": "modis-aqua-myd15a2h",
+        "title": "MODIS Aqua Leaf Area Index FPAR 8-Day L4 Global 500m"
+      },
+      {
+        "id": "modis-aqua-myd17a2h",
+        "title": "MODIS Aqua Gross Primary Productivity 8-Day L4 Global 500m"
+      },
+      {
+        "id": "modis-aqua-myd17a2hgf",
+        "title": "MODIS Aqua Gross Primary Productivity Gap-Filled 8-Day L4 Global 500m"
+      },
+      {
+        "id": "modis-aqua-myd21a2",
+        "title": "MODIS Aqua Land Surface Temperature 3-Band Emissivity 8-Day L3 Global 1km"
+      },
+      {
+        "id": "modis-terra-mod10a1",
+        "title": "MODIS Terra Snow Cover Daily Global 500m"
+      },
+      {
+        "id": "modis-terra-mod10a2",
+        "title": "MODIS Terra Snow Cover 8-Day L3 Global 500m"
+      },
+      {
+        "id": "modis-terra-mod14a1",
+        "title": "MODIS Terra Thermal Anomalies Fire Daily L3 Global 1km"
+      },
+      {
+        "id": "modis-terra-mod14a2",
+        "title": "MODIS Terra Thermal Anomalies Fire 8-Day L3 Global 1km"
+      },
+      {
+        "id": "modis-terra-mod15a2h",
+        "title": "MODIS Terra Leaf Area Index FPAR 8-Day L4 Global 500m"
+      },
+      {
+        "id": "modis-terra-mod17a2h",
+        "title": "MODIS Terra Gross Primary Productivity 8-Day L4 Global 500m"
+      },
+      {
+        "id": "modis-terra-mod17a2hgf",
+        "title": "MODIS Terra Gross Primary Productivity Gap-Filled 8-Day L4 Global 500m"
+      },
+      {
+        "id": "modis-terra-mod21a2",
+        "title": "MODIS Terra Land Surface Temperature 3-Band Emissivity 8-Day L3 Global 1km"
+      },
+      {
+        "id": "modis-terraaqua-mcd12q1",
+        "title": "MODIS Terra and Aqua Land Cover Type Yearly Global 500m"
+      },
+      {
+        "id": "modis-terraaqua-mcd64a1",
+        "title": "MODIS Terra and Aqua Direct Broadcast Burned Area Monthly L3 Global 500m"
+      },
+      {
+        "id": "sentinel-1-grd",
+        "title": "Sentinel-1 Ground Range Detected (GRD)"
+      },
+      {
+        "id": "sentinel-1-ocn",
+        "title": "Sentinel-1 Level-2 Ocean (OCN): IW, EW, SM"
+      },
+      {
+        "id": "sentinel-1-ocn-wv",
+        "title": "Sentinel-1 Level-2 Ocean (OCN): WV"
+      },
+      {
+        "id": "sentinel-1-slc",
+        "title": "Sentinel-1 Single Look Complex: IW, EW, SM"
+      },
+      {
+        "id": "sentinel-1-slc-burst",
+        "title": "Sentinel-1 SLC Burst"
+      },
+      {
+        "id": "sentinel-1-slc-wv",
+        "title": "Sentinel-1 Single Look Complex: WV"
+      },
+      {
+        "id": "sentinel-2-global-mosaics",
+        "title": "Sentinel-2 Global Mosaics"
+      },
+      {
+        "id": "sentinel-2-gri-l1c",
+        "title": "Sentinel-2 GRI L1C"
+      },
+      {
+        "id": "sentinel-2-l1c",
+        "title": "Sentinel-2 Level-1C"
+      },
+      {
+        "id": "sentinel-2-l2a",
+        "title": "Sentinel-2 Level-2A"
+      },
+      {
+        "id": "sentinel-2-l2a-tlm",
+        "title": "Sentinel-2 Level-2A TLM"
+      },
+      {
+        "id": "sentinel-2-night-time-acquisitions",
+        "title": "Sentinel-2 Night-Time Acquisitions"
+      },
+      {
+        "id": "sentinel-3-olci-2-lfr-nrt",
+        "title": "Sentinel-3 OLCI Land Full Resolution (NRT)"
+      },
+      {
+        "id": "sentinel-3-olci-2-lfr-ntc",
+        "title": "Sentinel-3 OLCI Land Full Resolution (NTC)"
+      },
+      {
+        "id": "sentinel-3-olci-2-lrr-nrt",
+        "title": "Sentinel-3 OLCI Land Reduced Resolution (NRT)"
+      },
+      {
+        "id": "sentinel-3-olci-2-lrr-ntc",
+        "title": "Sentinel-3 OLCI Land Reduced Resolution (NTC)"
+      },
+      {
+        "id": "sentinel-3-olci-2-wfr-nrt",
+        "title": "Sentinel-3 OLCI Water Full Resolution (NRT)"
+      },
+      {
+        "id": "sentinel-3-olci-2-wfr-ntc",
+        "title": "Sentinel-3 OLCI Water Full Resolution (NTC)"
+      },
+      {
+        "id": "sentinel-3-olci-2-wrr-nrt",
+        "title": "Sentinel-3 OLCI Water Reduced Resolution (NRT)"
+      },
+      {
+        "id": "sentinel-3-olci-2-wrr-ntc",
+        "title": "Sentinel-3 OLCI Water Reduced Resolution (NTC)"
+      },
+      {
+        "id": "sentinel-3-sl-2-frp-nrt",
+        "title": "Sentinel-3 SLSTR Fire Radiative Power (NRT)"
+      },
+      {
+        "id": "sentinel-3-sl-2-frp-ntc",
+        "title": "Sentinel-3 SLSTR Fire Radiative Power (NTC)"
+      },
+      {
+        "id": "sentinel-3-sl-2-lst-nrt",
+        "title": "Sentinel-3 SLSTR Land Surface Temperature (NRT)"
+      },
+      {
+        "id": "sentinel-3-sl-2-lst-ntc",
+        "title": "Sentinel-3 SLSTR Land Surface Temperature (NTC)"
+      },
+      {
+        "id": "sentinel-3-sl-2-wst-nrt",
+        "title": "Sentinel-3 SLSTR Water Surface Temperature (NRT)"
+      },
+      {
+        "id": "sentinel-3-sl-2-wst-ntc",
+        "title": "Sentinel-3 SLSTR Water Surface Temperature (NTC)"
+      },
+      {
+        "id": "sentinel-3-sr-1-sra-a-nrt",
+        "title": "Sentinel-3 SRAL Radar Altimetry L-1A (NRT)"
+      },
+      {
+        "id": "sentinel-3-sr-1-sra-a-ntc",
+        "title": "Sentinel-3 SRAL Radar Altimetry L-1A (NTC)"
+      },
+      {
+        "id": "sentinel-3-sr-1-sra-a-stc",
+        "title": "Sentinel-3 SRAL Radar Altimetry L-1A (STC)"
+      },
+      {
+        "id": "sentinel-3-sr-1-sra-ntc",
+        "title": "Sentinel-3 SRAL Radar Altimetry L-1B (NTC)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-hy-nrt",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry - Hydrology (NRT)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-hy-ntc",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry - Hydrology (NTC)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-hy-stc",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry - Hydrology (STC)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-li-nrt",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry - Land Ice (NRT)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-li-ntc",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry - Land Ice (NTC)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-li-stc",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry - Land Ice (STC)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-ntc",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry (NTC)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-si-nrt",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry - Sea Ice (NRT)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-si-ntc",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry - Sea Ice (NTC)"
+      },
+      {
+        "id": "sentinel-3-sr-2-lan-si-stc",
+        "title": "Sentinel-3 SRAL Land Radar Altimetry - Sea Ice (STC)"
+      },
+      {
+        "id": "sentinel-3-sr-2-wat-nrt",
+        "title": "Sentinel-3 SRAL Ocean Radar Altimetry (NRT)"
+      },
+      {
+        "id": "sentinel-3-sr-2-wat-ntc",
+        "title": "Sentinel-3 SRAL Ocean Radar Altimetry (NTC)"
+      },
+      {
+        "id": "sentinel-3-sr-2-wat-stc",
+        "title": "Sentinel-3 SRAL Ocean Radar Altimetry (STC)"
+      },
+      {
+        "id": "sentinel-3-syn-2-aod-ntc",
+        "title": "Sentinel-3 SYNERGY Aerosol Optical Depth (NTC)"
+      },
+      {
+        "id": "sentinel-3-syn-2-syn-ntc",
+        "title": "Sentinel-3 Land Surface Reflectance and Aerosol (NTC)"
+      },
+      {
+        "id": "sentinel-3-syn-2-syn-stc",
+        "title": "Sentinel-3 Land Surface Reflectance and Aerosol (STC)"
+      },
+      {
+        "id": "sentinel-3-syn-2-v10-ntc",
+        "title": "Sentinel-3 SYNERGY 10-Day Surface Reflectance and NDVI (NTC)"
+      },
+      {
+        "id": "sentinel-3-syn-2-v10-stc",
+        "title": "Sentinel-3 SYNERGY 10-Day Surface Reflectance and NDVI (STC)"
+      },
+      {
+        "id": "sentinel-3-syn-2-vg1-ntc",
+        "title": "Sentinel-3 SYNERGY 1-Day Surface Reflectance and NDVI (NTC)"
+      },
+      {
+        "id": "sentinel-3-syn-2-vg1-stc",
+        "title": "Sentinel-3 SYNERGY 1-Day Surface Reflectance and NDVI (STC)"
+      },
+      {
+        "id": "sentinel-3-syn-2-vgp-ntc",
+        "title": "Sentinel-3 SYNERGY Top of Atmosphere Reflectance (NTC)"
+      },
+      {
+        "id": "sentinel-3-syn-2-vgp-stc",
+        "title": "Sentinel-3 SYNERGY Top of Atmosphere Reflectance (STC)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra",
+        "title": "Sentinel-5P Level 1 Radiance"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd1-nrti",
+        "title": "Sentinel-5P Level 1 Radiance Band 1 (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd1-offl",
+        "title": "Sentinel-5P Level 1 Radiance Band 1 (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd1-rpro",
+        "title": "Sentinel-5P Level 1 Radiance Band 1 (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd2-nrti",
+        "title": "Sentinel-5P Level 1 Radiance Band 2 (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd2-offl",
+        "title": "Sentinel-5P Level 1 Radiance Band 2 (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd2-rpro",
+        "title": "Sentinel-5P Level 1 Radiance Band 2 (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd3-nrti",
+        "title": "Sentinel-5P Level 1 Radiance Band 3 (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd3-offl",
+        "title": "Sentinel-5P Level 1 Radiance Band 3 (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd3-rpro",
+        "title": "Sentinel-5P Level 1 Radiance Band 3 (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd4-nrti",
+        "title": "Sentinel-5P Level 1 Radiance Band 4 (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd4-offl",
+        "title": "Sentinel-5P Level 1 Radiance Band 4 (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd4-rpro",
+        "title": "Sentinel-5P Level 1 Radiance Band 4 (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd5-nrti",
+        "title": "Sentinel-5P Level 1 Radiance Band 5 (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd5-offl",
+        "title": "Sentinel-5P Level 1 Radiance Band 5 (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd5-rpro",
+        "title": "Sentinel-5P Level 1 Radiance Band 5 (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd6-nrti",
+        "title": "Sentinel-5P Level 1 Radiance Band 6 (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd6-offl",
+        "title": "Sentinel-5P Level 1 Radiance Band 6 (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd6-rpro",
+        "title": "Sentinel-5P Level 1 Radiance Band 6 (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd7-nrti",
+        "title": "Sentinel-5P Level 1 Radiance Band 7 (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd7-offl",
+        "title": "Sentinel-5P Level 1 Radiance Band 7 (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd7-rpro",
+        "title": "Sentinel-5P Level 1 Radiance Band 7 (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd8-nrti",
+        "title": "Sentinel-5P Level 1 Radiance Band 8 (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd8-offl",
+        "title": "Sentinel-5P Level 1 Radiance Band 8 (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-bd8-rpro",
+        "title": "Sentinel-5P Level 1 Radiance Band 8 (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l1-ra-nrti",
+        "title": "Sentinel-5P Level 1 Radiance (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-aer-ai",
+        "title": "Sentinel-5P Level 2 Ultraviolet Aerosol Index"
+      },
+      {
+        "id": "sentinel-5p-l2-aer-ai-nrti",
+        "title": "Sentinel-5P Level 2 Ultraviolet Aerosol Index (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-aer-ai-offl",
+        "title": "Sentinel-5P Level 2 Ultraviolet Aerosol Index (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-aer-ai-rpro",
+        "title": "Sentinel-5P Level 2 Ultraviolet Aerosol Index (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-aer-lh",
+        "title": "Sentinel-5P Level 2 Aerosol Layer Height"
+      },
+      {
+        "id": "sentinel-5p-l2-aer-lh-nrti",
+        "title": "Sentinel-5P Level 2 Aerosol Layer Height (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-aer-lh-offl",
+        "title": "Sentinel-5P Level 2 Aerosol Layer Height (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-aer-lh-rpro",
+        "title": "Sentinel-5P Level 2 Aerosol Layer Height (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-ch4",
+        "title": "Sentinel-5P Level 2 Methane"
+      },
+      {
+        "id": "sentinel-5p-l2-ch4-nrti",
+        "title": "Sentinel-5P Level 2 Methane (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-ch4-offl",
+        "title": "Sentinel-5P Level 2 Methane (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-ch4-rpro",
+        "title": "Sentinel-5P Level 2 Methane (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-cloud",
+        "title": "Sentinel-5P Level 2 Cloud"
+      },
+      {
+        "id": "sentinel-5p-l2-cloud-nrti",
+        "title": "Sentinel-5P Level 2 Cloud (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-cloud-offl",
+        "title": "Sentinel-5P Level 2 Cloud (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-cloud-rpro",
+        "title": "Sentinel-5P Level 2 Cloud (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-co",
+        "title": "Sentinel-5P Level 2 Carbon Monoxide"
+      },
+      {
+        "id": "sentinel-5p-l2-co-nrti",
+        "title": "Sentinel-5P Level 2 Carbon Monoxide (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-co-offl",
+        "title": "Sentinel-5P Level 2 Carbon Monoxide (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-co-rpro",
+        "title": "Sentinel-5P Level 2 Carbon Monoxide (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-hcho",
+        "title": "Sentinel-5P Level 2 Formaldehyde"
+      },
+      {
+        "id": "sentinel-5p-l2-hcho-nrti",
+        "title": "Sentinel-5P Level 2 Formaldehyde (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-hcho-offl",
+        "title": "Sentinel-5P Level 2 Formaldehyde (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-hcho-rpro",
+        "title": "Sentinel-5P Level 2 Formaldehyde (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-no2",
+        "title": "Sentinel-5P Level 2 Nitrogen Dioxide"
+      },
+      {
+        "id": "sentinel-5p-l2-no2-nrti",
+        "title": "Sentinel-5P Level 2 Nitrogen Dioxide (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-no2-offl",
+        "title": "Sentinel-5P Level 2 Nitrogen Dioxide (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-no2-rpro",
+        "title": "Sentinel-5P Level 2 Nitrogen Dioxide (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-np-bd3",
+        "title": "Sentinel-5P Level 2 NPP Cloud (band 3)"
+      },
+      {
+        "id": "sentinel-5p-l2-np-bd3-offl",
+        "title": "Sentinel-5P Level 2 NPP Cloud (band 3) (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-np-bd3-rpro",
+        "title": "Sentinel-5P Level 2 NPP Cloud (band 3) (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-np-bd6",
+        "title": "Sentinel-5P Level 2 NPP Cloud (band 6)"
+      },
+      {
+        "id": "sentinel-5p-l2-np-bd6-offl",
+        "title": "Sentinel-5P Level 2 NPP Cloud (band 6) (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-np-bd6-rpro",
+        "title": "Sentinel-5P Level 2 NPP Cloud (band 6) (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-np-bd7",
+        "title": "Sentinel-5P Level 2 NPP Cloud (band 7)"
+      },
+      {
+        "id": "sentinel-5p-l2-np-bd7-offl",
+        "title": "Sentinel-5P Level 2 NPP Cloud (band 7) (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-np-bd7-rpro",
+        "title": "Sentinel-5P Level 2 NPP Cloud (band 7) (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-o3",
+        "title": "Sentinel-5P Level 2 Ozone"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-nrti",
+        "title": "Sentinel-5P Level 2 Ozone (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-offl",
+        "title": "Sentinel-5P Level 2 Ozone (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-pr",
+        "title": "Sentinel-5P Level 2 Ozone Profile"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-pr-nrti",
+        "title": "Sentinel-5P Level 2 Ozone Profile (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-pr-offl",
+        "title": "Sentinel-5P Level 2 Ozone Profile (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-pr-rpro",
+        "title": "Sentinel-5P Level 2 Ozone Profile (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-rpro",
+        "title": "Sentinel-5P Level 2 Ozone (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-tcl",
+        "title": "Sentinel-5P Level 2 Tropospheric Ozone"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-tcl-nrti",
+        "title": "Sentinel-5P Level 2 Tropospheric Ozone (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-tcl-offl",
+        "title": "Sentinel-5P Level 2 Tropospheric Ozone (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-o3-tcl-rpro",
+        "title": "Sentinel-5P Level 2 Tropospheric Ozone (RPRO)"
+      },
+      {
+        "id": "sentinel-5p-l2-so2",
+        "title": "Sentinel-5P Level 2 Sulphur Dioxide"
+      },
+      {
+        "id": "sentinel-5p-l2-so2-nrti",
+        "title": "Sentinel-5P Level 2 Sulphur Dioxide (NRTI)"
+      },
+      {
+        "id": "sentinel-5p-l2-so2-offl",
+        "title": "Sentinel-5P Level 2 Sulphur Dioxide (OFFL)"
+      },
+      {
+        "id": "sentinel-5p-l2-so2-rpro",
+        "title": "Sentinel-5P Level 2 Sulphur Dioxide (RPRO)"
+      },
+      {
+        "id": "sentinel-6-amr-c-nrt",
+        "title": "Sentinel-6 AMR-C Near Real-Time (NRT)"
+      },
+      {
+        "id": "sentinel-6-p4-1b-nrt",
+        "title": "Sentinel-6 P4 Level 1B Near Real-Time (NRT)"
+      },
+      {
+        "id": "sentinel-6-p4-1b-ntc",
+        "title": "Sentinel-6 P4 Level 1B Non Time Critical (NTC)"
+      },
+      {
+        "id": "sentinel-6-p4-1b-stc",
+        "title": "Sentinel-6 P4 Level 1B Short Time Critical (STC)"
+      },
+      {
+        "id": "sentinel-6-p4-2-nrt",
+        "title": "Sentinel-6 P4 Level 2 Near Real-Time (NRT)"
+      },
+      {
+        "id": "sentinel-6-p4-2-ntc",
+        "title": "Sentinel-6 P4 Level 2 Non Time Critical (NTC)"
+      },
+      {
+        "id": "sentinel-6-p4-2-stc",
+        "title": "Sentinel-6 P4 Level 2 Short Time Critical (STC)"
+      }
+    ]
+  },
+  "hydroweb_paths": [],
+  "candidates": [
+    {
+      "url": "https://hydroweb.next.theia-land.fr/api/",
+      "status": 404,
+      "elapsed_s": 1.22,
+      "note": "<!DOCTYPE html><html class=\"m-0 h-full p-0\" lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link re"
+    },
+    {
+      "url": "https://hydroweb.next.theia-land.fr/api/collections",
+      "status": 404,
+      "elapsed_s": 1.8,
+      "note": "<!DOCTYPE html><html class=\"m-0 h-full p-0\" lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link re"
+    },
+    {
+      "url": "https://hydroweb.next.theia-land.fr/api/lakes",
+      "status": 404,
+      "elapsed_s": 1.02,
+      "note": "<!DOCTYPE html><html class=\"m-0 h-full p-0\" lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link re"
+    },
+    {
+      "url": "https://hydroweb.next.theia-land.fr/api/time_series",
+      "status": 404,
+      "elapsed_s": 0.95,
+      "note": "<!DOCTYPE html><html class=\"m-0 h-full p-0\" lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link re"
+    },
+    {
+      "url": "https://dahiti.dgfi.tum.de/api/v1/",
+      "status": 404,
+      "elapsed_s": 1.12,
+      "note": "<!-- get profile image --> <!-- load menu --> <!DOCTYPE html> <html class=\"h-100\"> <head> <meta charset=\"utf-8\"> <title> | Database for Hydrologic"
+    },
+    {
+      "url": "https://ipad.fas.usda.gov/",
+      "status": 503,
+      "elapsed_s": 1.38,
+      "note": "<!doctype html> <html lang=\"en\"> <head> <meta charset=\"utf-8\" /> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" /> <title>IPAD retired"
+    }
+  ]
+}

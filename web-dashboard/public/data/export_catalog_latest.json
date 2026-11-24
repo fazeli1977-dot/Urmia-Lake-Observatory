@@ -1,0 +1,158 @@
+{
+  "generated_at_utc": "2026-11-24T14:19:37Z",
+  "schema_version": "8.0.0",
+  "geojson_layers_count": 20,
+  "geojson_layers": [
+    {
+      "name": "bathymetric_contours.geojson",
+      "public_path": "data/gis/bathymetric_contours.geojson",
+      "size_kb": 72.73
+    },
+    {
+      "name": "historical_shorelines.geojson",
+      "public_path": "data/gis/historical_shorelines.geojson",
+      "size_kb": 75.95
+    },
+    {
+      "name": "lake_water_extent.geojson",
+      "public_path": "data/gis/lake_water_extent.geojson",
+      "size_kb": 18.61
+    },
+    {
+      "name": "salt_crust_exposure.geojson",
+      "public_path": "data/gis/salt_crust_exposure.geojson",
+      "size_kb": 16.96
+    },
+    {
+      "name": "subbasins.geojson",
+      "public_path": "data/gis/subbasins.geojson",
+      "size_kb": 16.37
+    },
+    {
+      "name": "urmia_basin_boundary.geojson",
+      "public_path": "data/gis/urmia_basin_boundary.geojson",
+      "size_kb": 13.66
+    },
+    {
+      "name": "causeway.geojson",
+      "public_path": "geo/causeway.geojson",
+      "size_kb": 2.41
+    },
+    {
+      "name": "urmia_active_water.geojson",
+      "public_path": "geo/urmia_active_water.geojson",
+      "size_kb": 4.15
+    },
+    {
+      "name": "urmia_causeway.geojson",
+      "public_path": "geo/urmia_causeway.geojson",
+      "size_kb": 6.58
+    },
+    {
+      "name": "urmia_dams.geojson",
+      "public_path": "geo/urmia_dams.geojson",
+      "size_kb": 1.01
+    },
+    {
+      "name": "urmia_desiccated_zones.geojson",
+      "public_path": "geo/urmia_desiccated_zones.geojson",
+      "size_kb": 48.56
+    },
+    {
+      "name": "urmia_hypsometric_contours.geojson",
+      "public_path": "geo/urmia_hypsometric_contours.geojson",
+      "size_kb": 33.64
+    },
+    {
+      "name": "urmia_lake_boundary.geojson",
+      "public_path": "geo/urmia_lake_boundary.geojson",
+      "size_kb": 37.79
+    },
+    {
+      "name": "urmia_major_rivers.geojson",
+      "public_path": "geo/urmia_major_rivers.geojson",
+      "size_kb": 148.37
+    },
+    {
+      "name": "urmia_monitoring_landmarks.geojson",
+      "public_path": "geo/urmia_monitoring_landmarks.geojson",
+      "size_kb": 4.32
+    },
+    {
+      "name": "urmia_reservoirs.geojson",
+      "public_path": "geo/urmia_reservoirs.geojson",
+      "size_kb": 5.35
+    },
+    {
+      "name": "urmia_riparian_vegetation.geojson",
+      "public_path": "geo/urmia_riparian_vegetation.geojson",
+      "size_kb": 1.1
+    },
+    {
+      "name": "urmia_shorelines.geojson",
+      "public_path": "geo/urmia_shorelines.geojson",
+      "size_kb": 50.73
+    },
+    {
+      "name": "urmia_subbasins.geojson",
+      "public_path": "geo/urmia_subbasins.geojson",
+      "size_kb": 8.97
+    },
+    {
+      "name": "urmia_watershed_basin.geojson",
+      "public_path": "geo/urmia_watershed_basin.geojson",
+      "size_kb": 2.77
+    }
+  ],
+  "geotiff_rasters_count": 0,
+  "geotiff_rasters": [],
+  "geotiff_status": "DATA_UNAVAILABLE",
+  "json_datasets": [
+    {
+      "name": "data_manifest.json",
+      "public_path": "data/data_manifest.json",
+      "size_kb": 0.71
+    },
+    {
+      "name": "era5_climate_latest.json",
+      "public_path": "data/era5_climate_latest.json",
+      "size_kb": 7.77
+    },
+    {
+      "name": "lake_hydrology_latest.json",
+      "public_path": "data/lake_hydrology_latest.json",
+      "size_kb": 19.49
+    },
+    {
+      "name": "lake_scientific_analytics_latest.json",
+      "public_path": "data/lake_scientific_analytics_latest.json",
+      "size_kb": 3.56
+    },
+    {
+      "name": "scientific_research_center_latest.json",
+      "public_path": "data/scientific_research_center_latest.json",
+      "size_kb": 83.72
+    },
+    {
+      "name": "urmia_live_stac_feed.json",
+      "public_path": "data/urmia_live_stac_feed.json",
+      "size_kb": 11.87
+    }
+  ],
+  "security_policy": {
+    "max_upload_size_mb": 25,
+    "allowed_extensions": [
+      ".csv",
+      ".xlsx",
+      ".json",
+      ".geojson",
+      ".zip",
+      ".tif",
+      ".tiff",
+      ".nc",
+      ".pdf"
+    ],
+    "client_side_only": true,
+    "no_external_transmission": true
+  }
+}

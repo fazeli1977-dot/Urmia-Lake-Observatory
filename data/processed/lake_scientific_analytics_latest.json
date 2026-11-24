@@ -1,0 +1,123 @@
+{
+  "schema_version": "4.0.0",
+  "generated_at_utc": "2026-11-24T14:30:54.062586+00:00",
+  "upstream_hydrology_schema": "3.2.0",
+  "upstream_generated_at": "2026-11-24T07:09:33.636542+00:00",
+  "station_metadata": {
+    "lake_name": "Urmia Lake"
+  },
+  "statistical_trends": {
+    "source_file": "data\\processed\\lake_hydrology_latest.json",
+    "detected_columns": {
+      "date": "date",
+      "level": "water_level_m"
+    },
+    "total_records": 43,
+    "date_range": {
+      "start": "1995-05-15",
+      "end": "2026-11-19"
+    },
+    "periods": {
+      "full_record": {
+        "start_date": "1995-05-15",
+        "end_date": "2026-11-19",
+        "mann_kendall": {
+          "n": 43,
+          "s_statistic": -564,
+          "var_s": 9064.0,
+          "z_score": -5.9136,
+          "p_value": 0.0,
+          "kendall_tau": -0.6246,
+          "alpha": 0.05,
+          "significant": true,
+          "trend": "decreasing"
+        },
+        "sens_slope_m": {
+          "slope_per_year": -0.1708,
+          "slope_per_decade": -1.7081,
+          "intercept": 1275.1264
+        }
+      },
+      "last_10_years": {
+        "start_date": "2018-09-25",
+        "end_date": "2026-11-19",
+        "mann_kendall": {
+          "n": 34,
+          "s_statistic": -258,
+          "var_s": 4484.0,
+          "z_score": -3.838,
+          "p_value": 0.000124,
+          "kendall_tau": -0.4599,
+          "alpha": 0.05,
+          "significant": true,
+          "trend": "decreasing"
+        },
+        "sens_slope_m": {
+          "slope_per_year": -0.1418,
+          "slope_per_decade": -1.4182,
+          "intercept": 1270.9196
+        }
+      },
+      "last_5_years": {
+        "start_date": "2022-09-25",
+        "end_date": "2026-11-19",
+        "mann_kendall": {
+          "n": 30,
+          "s_statistic": -144,
+          "var_s": 3075.3333,
+          "z_score": -2.5786,
+          "p_value": 0.009919,
+          "kendall_tau": -0.331,
+          "alpha": 0.05,
+          "significant": true,
+          "trend": "decreasing"
+        },
+        "sens_slope_m": {
+          "slope_per_year": -0.1112,
+          "slope_per_decade": -1.1116,
+          "intercept": 1270.2587
+        }
+      }
+    }
+  },
+  "ecological_and_hazard_assessment": {
+    "ecological_benchmark": {
+      "target_level_m": 1274.1,
+      "target_area_km2": 4340.0,
+      "target_volume_km3": 14.5,
+      "level_deficit_m": -4.345,
+      "volume_deficit_km3": -14.259,
+      "water_volume_retention_pct": 1.66
+    },
+    "exposed_lakebed_playa": {
+      "current_wet_area_km2": 404.79,
+      "exposed_salt_playa_vs_ecological_km2": 3935.21,
+      "exposed_bed_vs_max_historical_km2": 5395.21,
+      "desiccation_ratio_vs_ecological_pct": 90.67
+    },
+    "salinity_and_biology": {
+      "estimated_salinity_g_l": 345.0,
+      "halite_supersaturated": true,
+      "estimated_precipitated_salt_ratio": 0.8986,
+      "artemia_threshold_g_l": 240.0,
+      "artemia_ecological_status": "collapsed_hypersaline_saturation"
+    },
+    "climate_stress": {
+      "source_mode": "summary_metrics",
+      "annual_equiv_precip_mm": 240.0,
+      "annual_equiv_evap_mm": 1150.0,
+      "mean_temp_c": 13.5,
+      "p_to_e_ratio": 0.2087,
+      "climate_stress_score_0_100": 40.4
+    },
+    "salt_dust_hazard": {
+      "index_0_100": 73.1,
+      "hazard_tier": "HIGH",
+      "primary_hotspot_zones": [
+        "Eastern Salt Flats (Sharafkhaneh-Rahmanlu Axis)",
+        "Southern Shallow Basin (Miandoab-Bokan Delta)",
+        "Jabbarlu-Bonab Exposed Margin"
+      ]
+    }
+  }
+}

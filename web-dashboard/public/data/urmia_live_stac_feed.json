@@ -1,0 +1,417 @@
+{
+  "generated_at": "2026-11-24T10:25:57.604105+00:00",
+  "basin": "Lake Urmia",
+  "mosaic_search_id": "pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1",
+  "mosaic_bounds": [
+    44.8,
+    36.85,
+    46.15,
+    38.45
+  ],
+  "benchmark": {
+    "stac_search_latency_ms": 4847.1,
+    "tiles_tested": 9,
+    "tiles_succeeded": 9,
+    "ndwi_probe_status": 200,
+    "ndwi_probe_ms": 584.52,
+    "tile_p50_ms": 1853.47,
+    "tile_p95_ms": 3024.58,
+    "avg_tile_size_kb": 18.97,
+    "webp_optimized": true,
+    "ui_frame_budget_safe": true
+  },
+  "latest_scene": {
+    "id": "S2A_MSIL2A_20261123T075801_R135_T38SNH_20261123T105113",
+    "mgrs_tile": "38SNH",
+    "datetime": "2026-11-23T07:58:01.024000+00:00",
+    "cloud_cover": 7.88,
+    "platform": "Sentinel-2A",
+    "bbox": [
+      44.8,
+      36.85,
+      46.15,
+      38.45
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            46.2571843,
+            38.3921426
+          ],
+          [
+            46.2096235,
+            38.2487507
+          ],
+          [
+            46.1600549,
+            38.1021067
+          ],
+          [
+            46.1098281,
+            37.9556396
+          ],
+          [
+            46.0749134,
+            37.8537458
+          ],
+          [
+            44.9997726,
+            37.859442
+          ],
+          [
+            44.9997695,
+            38.8489985
+          ],
+          [
+            46.2649601,
+            38.8421487
+          ],
+          [
+            46.2571843,
+            38.3921426
+          ]
+        ]
+      ]
+    },
+    "tiles": {
+      "true_color_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&assets=visual&format=webp",
+      "ndwi_live_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&expression=(B03-B08)/(B03%2BB08)&asset_as_band=true&rescale=-0.6,0.6&colormap_name=ylgnbu&format=webp"
+    }
+  },
+  "recent_scenes": [
+    {
+      "id": "S2A_MSIL2A_20261123T075801_R135_T38SNH_20261123T105113",
+      "mgrs_tile": "38SNH",
+      "datetime": "2026-11-23T07:58:01.024000+00:00",
+      "cloud_cover": 7.88,
+      "platform": "Sentinel-2A",
+      "bbox": [
+        44.8,
+        36.85,
+        46.15,
+        38.45
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              46.2571843,
+              38.3921426
+            ],
+            [
+              46.2096235,
+              38.2487507
+            ],
+            [
+              46.1600549,
+              38.1021067
+            ],
+            [
+              46.1098281,
+              37.9556396
+            ],
+            [
+              46.0749134,
+              37.8537458
+            ],
+            [
+              44.9997726,
+              37.859442
+            ],
+            [
+              44.9997695,
+              38.8489985
+            ],
+            [
+              46.2649601,
+              38.8421487
+            ],
+            [
+              46.2571843,
+              38.3921426
+            ]
+          ]
+        ]
+      },
+      "tiles": {
+        "true_color_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&assets=visual&format=webp",
+        "ndwi_live_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&expression=(B03-B08)/(B03%2BB08)&asset_as_band=true&rescale=-0.6,0.6&colormap_name=ylgnbu&format=webp"
+      }
+    },
+    {
+      "id": "S2A_MSIL2A_20261123T075801_R135_T38SNG_20261123T105113",
+      "mgrs_tile": "38SNG",
+      "datetime": "2026-11-23T07:58:01.024000+00:00",
+      "cloud_cover": 18.8,
+      "platform": "Sentinel-2A",
+      "bbox": [
+        44.8,
+        36.85,
+        46.15,
+        38.45
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              46.1050592,
+              37.9417222
+            ],
+            [
+              46.0596338,
+              37.8091542
+            ],
+            [
+              46.0088558,
+              37.6628344
+            ],
+            [
+              45.9619209,
+              37.515564
+            ],
+            [
+              45.9132937,
+              37.3688396
+            ],
+            [
+              45.864557,
+              37.2221681
+            ],
+            [
+              45.8158604,
+              37.075483
+            ],
+            [
+              45.7755554,
+              36.9538541
+            ],
+            [
+              44.9997753,
+              36.9578811
+            ],
+            [
+              44.9997724,
+              37.9475896
+            ],
+            [
+              46.1050592,
+              37.9417222
+            ]
+          ]
+        ]
+      },
+      "tiles": {
+        "true_color_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&assets=visual&format=webp",
+        "ndwi_live_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&expression=(B03-B08)/(B03%2BB08)&asset_as_band=true&rescale=-0.6,0.6&colormap_name=ylgnbu&format=webp"
+      }
+    },
+    {
+      "id": "S2A_MSIL2A_20261123T075801_R135_T38SMH_20261123T105113",
+      "mgrs_tile": "38SMH",
+      "datetime": "2026-11-23T07:58:01.024000+00:00",
+      "cloud_cover": 3.61,
+      "platform": "Sentinel-2A",
+      "bbox": [
+        44.8,
+        36.85,
+        46.15,
+        38.45
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              43.8472486,
+              38.8433101
+            ],
+            [
+              45.112474,
+              38.8489443
+            ],
+            [
+              45.1109536,
+              37.8593897
+            ],
+            [
+              43.8628278,
+              37.8539506
+            ],
+            [
+              43.8472486,
+              38.8433101
+            ]
+          ]
+        ]
+      },
+      "tiles": {
+        "true_color_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&assets=visual&format=webp",
+        "ndwi_live_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&expression=(B03-B08)/(B03%2BB08)&asset_as_band=true&rescale=-0.6,0.6&colormap_name=ylgnbu&format=webp"
+      }
+    },
+    {
+      "id": "S2A_MSIL2A_20261123T075801_R135_T38SMG_20261123T105113",
+      "mgrs_tile": "38SMG",
+      "datetime": "2026-11-23T07:58:01.024000+00:00",
+      "cloud_cover": 18.14,
+      "platform": "Sentinel-2A",
+      "bbox": [
+        44.8,
+        36.85,
+        46.15,
+        38.45
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              43.8614709,
+              37.9420809
+            ],
+            [
+              45.111086,
+              37.9475371
+            ],
+            [
+              45.1096319,
+              36.9578305
+            ],
+            [
+              43.8763705,
+              36.9525649
+            ],
+            [
+              43.8614709,
+              37.9420809
+            ]
+          ]
+        ]
+      },
+      "tiles": {
+        "true_color_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&assets=visual&format=webp",
+        "ndwi_live_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&expression=(B03-B08)/(B03%2BB08)&asset_as_band=true&rescale=-0.6,0.6&colormap_name=ylgnbu&format=webp"
+      }
+    },
+    {
+      "id": "S2A_MSIL2A_20261123T075801_R135_T38SMF_20261123T105113",
+      "mgrs_tile": "38SMF",
+      "datetime": "2026-11-23T07:58:01.024000+00:00",
+      "cloud_cover": 12.35,
+      "platform": "Sentinel-2A",
+      "bbox": [
+        44.8,
+        36.85,
+        46.15,
+        38.45
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              43.8750647,
+              37.0412498
+            ],
+            [
+              45.1097593,
+              37.0465323
+            ],
+            [
+              45.1083685,
+              36.056675
+            ],
+            [
+              43.8893163,
+              36.0515787
+            ],
+            [
+              43.8750647,
+              37.0412498
+            ]
+          ]
+        ]
+      },
+      "tiles": {
+        "true_color_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&assets=visual&format=webp",
+        "ndwi_live_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&expression=(B03-B08)/(B03%2BB08)&asset_as_band=true&rescale=-0.6,0.6&colormap_name=ylgnbu&format=webp"
+      }
+    },
+    {
+      "id": "S2B_MSIL2A_20261123T074139_R092_T38SNH_20261123T095341",
+      "mgrs_tile": "38SNH",
+      "datetime": "2026-11-23T07:41:39.024000+00:00",
+      "cloud_cover": 5.48,
+      "platform": "Sentinel-2B",
+      "bbox": [
+        44.8,
+        36.85,
+        46.15,
+        38.45
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              45.1606234,
+              37.8585898
+            ],
+            [
+              45.180428,
+              37.9270173
+            ],
+            [
+              45.2231254,
+              38.0744224
+            ],
+            [
+              45.2657851,
+              38.2217745
+            ],
+            [
+              45.3096725,
+              38.3687124
+            ],
+            [
+              45.3509575,
+              38.5165063
+            ],
+            [
+              45.394705,
+              38.6636195
+            ],
+            [
+              45.4374469,
+              38.8110805
+            ],
+            [
+              45.4482423,
+              38.8465704
+            ],
+            [
+              46.2649601,
+              38.8421487
+            ],
+            [
+              46.2478654,
+              37.8528295
+            ],
+            [
+              45.1606234,
+              37.8585898
+            ]
+          ]
+        ]
+      },
+      "tiles": {
+        "true_color_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&assets=visual&format=webp",
+        "ndwi_live_webp": "https://planetarycomputer.microsoft.com/api/data/v1/mosaic/pc1.1795602349.5b4a9ef5526546e78c90ac7c0feeefe1/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&expression=(B03-B08)/(B03%2BB08)&asset_as_band=true&rescale=-0.6,0.6&colormap_name=ylgnbu&format=webp"
+      }
+    }
+  ]
+}

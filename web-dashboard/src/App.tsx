@@ -1,62 +1,187 @@
 import { useEffect, useState } from 'react';
 import UrmiaMap from './components/UrmiaMap';
 import type { MapLang } from './components/UrmiaMap';
+import UloLogo from './components/UloLogo';
+import KpiGrid from './components/KpiGrid';
+import ScientificCharts from './components/ScientificCharts';
+import EcologicalAnalyticsPanel from './components/EcologicalAnalyticsPanel';
+import { ScientificResearchCenter } from './components/ScientificResearchCenter';
+import { DataManagementReports } from './components/DataManagementReports';
+
+
+import type {
+  LakeHydrologyDataset,
+  LakeScientificAnalytics
+} from './types/observatory';
+
+type ViewSection = 'overview' | 'map' | 'charts' | 'analytics';
 
 export default function App() {
   const [lang, setLang] = useState<MapLang>('fa');
+  const [activeView, setActiveView] = useState<ViewSection>('overview');
+  const [hydrology, setHydrology] = useState<LakeHydrologyDataset | null>(null);
+  const [analytics, setAnalytics] = useState<LakeScientificAnalytics | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
   }, [lang]);
 
+  useEffect(() => {
+    let cancelled = false;
+    async function loadVerifiedDatasets() {
+      try {
+        setLoading(true);
+        const [hydroRes, anaRes] = await Promise.all([
+          fetch('/data/lake_hydrology_latest.json'),
+          fetch('/data/lake_scientific_analytics_latest.json')
+        ]);
+        if (!hydroRes.ok || !anaRes.ok) {
+          throw new Error(`HTTP ${hydroRes.status} / ${anaRes.status}`);
+        }
+        const [hydroJson, anaJson] = await Promise.all([
+          hydroRes.json() as Promise<LakeHydrologyDataset>,
+          anaRes.json() as Promise<LakeScientificAnalytics>
+        ]);
+        if (!cancelled) {
+          setHydrology(hydroJson);
+          setAnalytics(anaJson);
+          setLoadError(null);
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setLoadError(err instanceof Error ? err.message : 'Unknown fetch error');
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    }
+    loadVerifiedDatasets();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const isFa = lang === 'fa';
+
+  const navItems: { id: ViewSection; fa: string; en: string }[] = [
+    { id: 'overview', fa: 'نمای جامع رصدخانه', en: 'Full Observatory View' },
+    { id: 'map', fa: 'نقشه تعاملی حوضه و دریاچه', en: 'Interactive Basin Map' },
+    { id: 'charts', fa: 'نمودارهای سری زمانی و هیپسومتری', en: 'Time-Series & Hypsometry Charts' },
+    { id: 'analytics', fa: 'آمار روند و مخاطرات اکولوژیک', en: 'Trend Statistics & Ecological Risk' }
+  ];
 
   return (
     <div className="ulo-shell">
       <header className="ulo-header">
-        <div>
-          <h1>
-            {isFa
-              ? 'رصدخانه هوشمند و علمی دریاچه ارومیه'
-              : 'Urmia Lake Scientific Observatory (ULO)'}
-          </h1>
-          <p>
-            {isFa
-              ? 'زیرساخت پایش سنجش از دور، هیدرولوژی، اقلیم و اکولوژی حوضه آبریز دریاچه ارومیه'
-              : 'Remote Sensing, Hydrology, Climate & Ecological Intelligence for Lake Urmia Basin'}
-          </p>
+        <div className="ulo-brand">
+          <UloLogo size={56} />
+          <div>
+            <h1>
+              {isFa
+                ? 'رصدخانه هوشمند و علمی دریاچه ارومیه'
+                : 'Urmia Lake Scientific Observatory (ULO)'}
+            </h1>
+            <p>
+              {isFa
+                ? 'پلتفرم جامع سنجش از دور، هیدرولوژی، اقلیم‌شناسی و پایش اکولوژیک حوضه آبریز دریاچه ارومیه'
+                : 'Open Remote Sensing, Hydrological, Climatic & Ecological Intelligence Platform for Lake Urmia Basin'}
+            </p>
+          </div>
         </div>
-        <button
-          type="button"
-          className="ulo-lang-btn"
-          onClick={() => setLang(isFa ? 'en' : 'fa')}
-        >
-          {isFa ? 'English (LTR)' : 'فارسی (RTL)'}
-        </button>
+
+        <div className="ulo-header-actions">
+          {hydrology && (
+            <span className="ulo-status-pill" dir="ltr">
+              {isFa ? 'آخرین مشاهده: ' : 'Latest Obs: '}
+              {hydrology.current_status.observation_date}
+            </span>
+          )}
+          <button
+            type="button"
+            className="ulo-lang-btn"
+            onClick={() => setLang(isFa ? 'en' : 'fa')}
+          >
+            {isFa ? 'English (LTR)' : 'فارسی (RTL)'}
+          </button>
+        </div>
       </header>
 
-      <section className="ulo-map-section">
-        <UrmiaMap lang={lang} />
-      </section>
+      {/* Instant Section Filter Bar (Zero Reload) */}
+      <nav className="ulo-nav-tabs" aria-label={isFa ? 'بخش‌های داشبورد' : 'Dashboard Views'}>
+        {navItems.map((tab) => (
+          <button
+            key={tab.id}
+            type="button"
+            className={`ulo-nav-tab ${activeView === tab.id ? 'active' : ''}`}
+            onClick={() => setActiveView(tab.id)}
+          >
+            {isFa ? tab.fa : tab.en}
+          </button>
+        ))}
+      </nav>
 
-      <main className="ulo-card">
-        <h2>
-          {isFa
-            ? 'وضعیت زیرساخت سامانه (گام ۲.۲ - نقشه تعاملی چندلایه)'
-            : 'System Infrastructure Status (Step 2.2 - Interactive Multi-layer Map)'}
-        </h2>
-        <p style={{ marginTop: '0.75rem', marginBottom: '1rem' }}>
-          {isFa
-            ? 'پنج لایه علمی GeoJSON شامل مرز حوضه آبریز، زیرحوضه‌ها، پهنه مرجع اکولوژیک دریاچه، رودخانه‌های اصلی و نقاط شاخص پایش بر روی نقشه پایه ماهواره‌ای سوار شده‌اند. مطابق اصل صداقت علمی، هیچ داده نمایشی یا ساختگی در جدول‌ها و شاخص‌ها نمایش داده نمی‌شود.'
-            : 'Five scientific GeoJSON layers (basin boundary, sub-basins, ecological lake reference extent, major rivers, monitoring landmarks) are mounted on a satellite basemap. Per strict scientific integrity rules, no mock or fabricated values are displayed.'}
-        </p>
-        <span className="ulo-badge-unavailable">
-          {isFa
-            ? 'وضعیت داده فعلی: لایه‌های مرجع مکانی فعال — سری‌های زمانی در انتظار دریافت داده معتبر'
-            : 'Current Data Status: Reference spatial layers active — time series awaiting verified ingestion'}
-        </span>
-      </main>
+      {loading && (
+        <div className="ulo-card">
+          <p>
+            {isFa
+              ? 'در حال بارگذاری داده‌های علمی راستی‌آزمایی‌شده دریاچه ارومیه...'
+              : 'Loading verified scientific datasets for Lake Urmia...'}
+          </p>
+        </div>
+      )}
+
+      {!loading && loadError && (
+        <div className="ulo-card">
+          <span className="ulo-badge-unavailable">
+            {isFa
+              ? `داده معتبر در دسترس نیست (${loadError})`
+              : `Data Unavailable (${loadError})`}
+          </span>
+        </div>
+      )}
+
+      {!loading && hydrology && analytics && (
+        <>
+          {activeView === 'overview' && (
+            <KpiGrid lang={lang} hydrology={hydrology} analytics={analytics} />
+          )}
+
+          {(activeView === 'overview' || activeView === 'map') && (
+            <section className="ulo-map-section">
+              <div className="ulo-section-head">
+                <h2>
+                  {isFa
+                    ? 'نقشه تعاملی چندلایه حوضه آبریز، زیرحوضه‌ها و پهنه مرجع دریاچه ارومیه'
+                    : 'Interactive Multi-Layer Spatial Map of Lake Urmia Basin & Sub-Basins'}
+                </h2>
+                <p>
+                  {isFa
+                    ? 'شامل ۱۳ لایه مکانی علمی (پهنه آبی فعلی، کانون‌های گردوغبار نمکی، خطوط ساحلی چندزمانه ۱۹۹۵ تا ۲۰۲۶، منحنی‌های هیپسومتری بستر، سدها و مخازن، تالاب‌های اقماری، رودخانه‌ها، زیرحوضه‌ها و ایستگاه‌های پایش) با کنترل شفافیت و شناسنامه تعاملی.'
+                    : 'Includes 13 interactive GeoJSON layers (active brine water, desiccated salt-dust zones, 1995–2026 shorelines, bathymetric contours, dams & reservoirs, satellite wetlands, tributary rivers, sub-basins & monitoring stations) with opacity control.'}
+                </p>
+              </div>
+              <UrmiaMap lang={lang} />
+            </section>
+          )}
+
+          {(activeView === 'overview' || activeView === 'charts') && (
+            <ScientificCharts lang={lang} hydrology={hydrology} analytics={analytics} />
+          )}
+
+          {(activeView === 'overview' || activeView === 'analytics') && (
+            <EcologicalAnalyticsPanel lang={lang} hydrology={hydrology} analytics={analytics} />
+          )}
+        </>
+      )}
+
+      
+      <ScientificResearchCenter lang={lang} />
+      <DataManagementReports lang={lang} />
 
       <footer className="ulo-footer">
         <div>
@@ -67,8 +192,8 @@ export default function App() {
         </div>
         <div>
           {isFa
-            ? 'سلب مسئولیت: این سامانه یک پروژه پژوهشی مستقل است و وابستگی سازمانی رسمی به NASA، ESA، USGS، UNESCO یا نهادهای دولتی ندارد.'
-            : 'Disclaimer: Independent scientific platform with no official institutional affiliation to NASA, ESA, USGS, UNESCO, or government agencies.'}
+            ? 'سلب مسئولیت علمی و حقوقی: این سامانه یک پلتفرم پژوهشی مستقل و متن‌باز است و هیچ‌گونه وابستگی سازمانی رسمی به NASA، ESA، USGS، UNESCO یا نهادهای دولتی ندارد. هیچ داده فرضی یا ساختگی در این داشبورد نمایش داده نمی‌شود.'
+            : 'Disclaimer: Independent open-science research platform with no official institutional affiliation to NASA, ESA, USGS, UNESCO, or government agencies. Zero mock or fabricated data.'}
         </div>
       </footer>
     </div>

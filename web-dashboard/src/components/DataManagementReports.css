@@ -1,0 +1,295 @@
+/* Phase 8 — Data Management, Scientific Export, Bilingual PDF & About Governance */
+
+.ulo-phase8-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ulo-p8-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 55%, #0e7490 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 1.45rem 1.75rem;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.ulo-p8-banner h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.ulo-p8-banner p {
+  margin: 0.3rem 0 0 0;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.65;
+}
+
+.ulo-p8-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.ulo-p8-tab {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #e2e8f0;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ulo-p8-tab.active {
+  background: #38bdf8;
+  border-color: #7dd3fc;
+  color: #082f49;
+}
+
+.ulo-p8-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.ulo-p8-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.15rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.ulo-p8-card-title {
+  margin: 0;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ulo-p8-dropzone {
+  border: 2px dashed #38bdf8;
+  background: #f0f9ff;
+  border-radius: 14px;
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.ulo-p8-dropzone:hover {
+  background: #e0f2fe;
+  border-color: #0284c7;
+}
+
+.ulo-p8-format-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.ulo-p8-chip {
+  background: #ffffff;
+  border: 1px solid #bae6fd;
+  color: #0369a1;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.ulo-p8-audit-box {
+  margin-top: 1.2rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 1.15rem;
+  background: #f8fafc;
+}
+
+.ulo-p8-audit-box.accepted {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.ulo-p8-audit-box.rejected {
+  border-color: #fca5a5;
+  background: #fef2f2;
+}
+
+.ulo-p8-check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+.ulo-p8-check-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.81rem;
+}
+
+.ulo-p8-status-pill {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.ulo-p8-status-pill.PASS {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.ulo-p8-status-pill.WARN {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.ulo-p8-status-pill.FAIL {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.ulo-p8-export-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.ulo-p8-export-tile {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.85rem;
+}
+
+.ulo-p8-export-tile h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.ulo-p8-export-tile p {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.8rem;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.ulo-p8-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ulo-p8-btn {
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 0.95rem;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.81rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ulo-p8-btn:hover {
+  background: #0369a1;
+}
+
+.ulo-p8-btn.secondary {
+  background: #0f172a;
+}
+
+.ulo-p8-btn.secondary:hover {
+  background: #1e293b;
+}
+
+.ulo-p8-btn.pdf {
+  background: #0d9488;
+}
+
+.ulo-p8-btn.pdf:hover {
+  background: #0f766e;
+}
+
+.ulo-p8-about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem;
+}
+
+.ulo-p8-about-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.1rem;
+  font-size: 0.83rem;
+  color: #334155;
+  line-height: 1.65;
+}
+
+.ulo-p8-about-box h4 {
+  margin: 0 0 0.45rem 0;
+  font-size: 0.96rem;
+  color: #0f172a;
+}
+
+.ulo-p8-preview-table-wrap {
+  margin-top: 0.9rem;
+  overflow-x: auto;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.ulo-p8-preview-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.ulo-p8-preview-table th,
+.ulo-p8-preview-table td {
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid #f1f5f9;
+  text-align: inherit;
+}
+
+.ulo-p8-preview-table th {
+  background: #f1f5f9;
+  font-weight: 700;
+}

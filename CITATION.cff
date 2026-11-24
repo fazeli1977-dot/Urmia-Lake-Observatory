@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this observatory platform, spatial datasets, or analytical pipeline in your research, please cite it as below."
+title: "Urmia Lake Scientific Observatory: Multi-Temporal Hydrological, Remote Sensing & WebGIS Intelligence Platform"
+version: 1.0.0
+date-released: 2026-11-23
+url: "https://github.com/alirezafazeli/Urmia-Lake-Observatory"
+license: MIT
+authors:
+  - family-names: "Fazeli"
+    given-names: "Alireza"
+keywords:
+  - Lake Urmia
+  - Endorheic Basin
+  - Remote Sensing
+  - Hydrological Modeling
+  - WebGIS
+  - Hypersaline Lakes
+  - Saline Dust Storms

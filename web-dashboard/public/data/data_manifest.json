@@ -1,0 +1,24 @@
+{
+  "synced_at_utc": "2026-11-24T07:10:48.190247+00:00",
+  "files": {
+    "lake_hydrology_latest.json": {
+      "available": true,
+      "size_bytes": 19961,
+      "source_relpath": "data/processed/lake_hydrology_latest.json"
+    },
+    "lake_scientific_analytics_latest.json": {
+      "available": true,
+      "size_bytes": 3644,
+      "source_relpath": "data/processed/lake_scientific_analytics_latest.json"
+    },
+    "era5_climate_latest.json": {
+      "available": true,
+      "size_bytes": 7954,
+      "source_relpath": "data/cache/era5_climate_latest.json"
+    }
+  },
+  "last_phase7_update_utc": "2026-11-24T14:12:24Z",
+  "scientific_research_center_file": "data/scientific_research_center_latest.json",
+  "last_phase8_update_utc": "2026-11-24T14:19:37Z",
+  "export_catalog_file": "data/export_catalog_latest.json"
+}

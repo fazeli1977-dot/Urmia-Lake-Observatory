@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-11-24T07:08:50.891411+00:00",
+  "cdse_clms_wl": {
+    "reachable": true,
+    "station_id": "1300000000142",
+    "latest_product_id": "c_gls_WL_202611191831_1300000000142_ALTI_V2.2.2_geojson",
+    "bbox": [
+      45.5,
+      37.67,
+      45.5,
+      37.67
+    ],
+    "start_datetime": "1992-09-28T22:30:00.000000Z",
+    "odata_href": "https://download.dataspace.copernicus.eu/odata/v1/Products(ad7180f1-4e1e-41cf-96c6-c172271c4606)/Nodes(c_gls_WL_202611191831_1300000000142_ALTI_V2.2.2_geojson)/Nodes(c_gls_WL_202611191831_1300000000142_ALTI_V2.2.2.json)/$value",
+    "requires_oidc_auth": true,
+    "recent_products_count": 3
+  },
+  "hydroweb_ope": {
+    "reachable": true,
+    "item_id": "L_urmia@hysope2:5f34e157-1477-32c3-b2f9-b4d0b990e991:V1",
+    "start_datetime": "1992-09-28T22:30:00Z",
+    "end_datetime": "2026-11-19T18:31:00Z",
+    "updated_datetime": "2026-11-23T12:32:29.530834Z",
+    "asset_href": "https://hydroweb.next.theia-land.fr/api/v1/rs-catalog/downloads/URN:FEATURE:DATA:hysope2:5f34e157-1477-32c3-b2f9-b4d0b990e991:V1/files/6ac91626b74bf54ffebfca76e74bebb6?scope=hysope2"
+  }
+}

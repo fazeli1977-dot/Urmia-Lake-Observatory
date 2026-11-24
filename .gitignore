@@ -1,27 +1,39 @@
-# Python
+# Python virtual environments & cache
 .venv/
 venv/
+env/
 __pycache__/
 *.py[cod]
-.pytest_cache/
+*$py.class
+*.pytest_cache/
+.mypy_cache/
 
-# Node / Frontend
+# Node / Frontend build caches
+web-dashboard/node_modules/
 node_modules/
 web-dashboard/dist/
-web-dashboard/.vite/
+*.tsbuildinfo
+
+# Raw heavy satellite rasters (regenerated via pipeline)
+data/raw/*.tif
+data/raw/*.tiff
+data/raw/*.nc
+data/raw/*.hdf
+data/interim/*.tif
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+.vscode/settings.json
 *.log
-
-# Raw & Heavy Data (Keep folder structure via .gitkeep)
-data/raw/*
-!data/raw/.gitkeep
-data/external-imports/*
-!data/external-imports/.gitkeep
-
-# Environment & Secrets
 .env
 .env.local
-*.local
 
-# OS
-Thumbs.db
-.DS_Store
+# Phase 9 QA Hygiene Rules
+science-engine/.venv/
+data/user_uploads/*
+!data/user_uploads/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+*.env
+.env.*

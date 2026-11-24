@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-23T14:42:13Z",
+  "generated_at_utc": "2026-11-23T18:06:49Z",
   "geographic_crs": "EPSG:4326",
   "metric_crs": "EPSG:32638",
   "summary_metrics": {
@@ -7,7 +7,13 @@
     "watershed_area_km2": 51709.81,
     "mapped_rivers_count": 8,
     "mapped_rivers_total_length_km": 800.89,
-    "monitoring_landmarks_count": 9
+    "monitoring_landmarks_count": 9,
+    "active_water_area_km2": 1190.42,
+    "desiccated_salt_flat_area_km2": 3130.39,
+    "mapped_dams_count": 9,
+    "mapped_reservoirs_count": 9,
+    "riparian_wetland_zones_count": 6,
+    "hypsometric_simulation_levels": 9
   },
   "layers": {
     "lake_boundary": {
@@ -28,6 +34,34 @@
     },
     "monitoring_landmarks": {
       "file": "/geo/urmia_monitoring_landmarks.geojson",
+      "feature_count": 9
+    },
+    "active_water": {
+      "file": "/geo/urmia_active_water.geojson",
+      "feature_count": 1
+    },
+    "desiccated_zones": {
+      "file": "/geo/urmia_desiccated_zones.geojson",
+      "feature_count": 2
+    },
+    "shorelines": {
+      "file": "/geo/urmia_shorelines.geojson",
+      "feature_count": 2
+    },
+    "dams": {
+      "file": "/geo/urmia_dams.geojson",
+      "feature_count": 9
+    },
+    "reservoirs": {
+      "file": "/geo/urmia_reservoirs.geojson",
+      "feature_count": 9
+    },
+    "riparian_vegetation": {
+      "file": "/geo/urmia_riparian_vegetation.geojson",
+      "feature_count": 6
+    },
+    "hypsometric_contours": {
+      "file": "/geo/urmia_hypsometric_contours.geojson",
       "feature_count": 9
     }
   }

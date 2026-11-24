@@ -1,68 +1,142 @@
 .ulo-map-wrapper {
   position: relative;
   width: 100%;
-  height: 68vh;
-  min-height: 500px;
-  font-family: 'Vazirmatn', 'Inter', 'Tahoma', sans-serif;
-  background: #0b1120;
-  border-radius: 12px;
+  height: 700px;
+  border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-}
-
-.ulo-map-wrapper.is-rtl {
-  direction: rtl;
-}
-
-.ulo-map-wrapper.is-ltr {
-  direction: ltr;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  background: #020617;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 .ulo-map-canvas {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
+/* Top Quick Spatial Bookmarks Bar */
+.ulo-bookmarks-bar {
+  position: absolute;
+  top: 14px;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: calc(100% - 410px);
+  padding: 6px 8px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.86);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.ulo-map-wrapper.is-rtl .ulo-bookmarks-bar {
+  left: 52px;
+}
+
+.ulo-map-wrapper.is-ltr .ulo-bookmarks-bar {
+  left: 52px;
+}
+
+.ulo-bookmark-btn {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  background: rgba(30, 41, 59, 0.85);
+  color: #e2e8f0;
+  font-size: 0.74rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  white-space: nowrap;
+}
+
+.ulo-bookmark-btn:hover {
+  background: rgba(14, 116, 144, 0.55);
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+/* Layer Control Drawer */
 .ulo-layer-panel {
   position: absolute;
   top: 14px;
-  right: 14px;
-  z-index: 5;
-  width: 320px;
+  z-index: 11;
+  width: 340px;
   max-height: calc(100% - 28px);
   overflow-y: auto;
-  background: rgba(15, 23, 42, 0.92);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  border-radius: 12px;
-  padding: 14px 16px;
+  padding: 13px 14px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.24);
   color: #f8fafc;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(56, 189, 248, 0.4) transparent;
+}
+
+.ulo-layer-panel.is-collapsed {
+  width: auto;
+  max-width: 240px;
+  padding: 9px 12px;
+  overflow: hidden;
 }
 
 .ulo-map-wrapper.is-rtl .ulo-layer-panel {
+  right: 14px;
+  direction: rtl;
   text-align: right;
 }
 
 .ulo-map-wrapper.is-ltr .ulo-layer-panel {
+  right: 14px;
+  direction: ltr;
   text-align: left;
 }
 
+.ulo-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
 .ulo-panel-title {
-  font-size: 0.95rem;
+  margin: 0;
+  font-size: 0.9rem;
   font-weight: 700;
-  margin: 0 0 10px 0;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
   color: #38bdf8;
 }
 
+.ulo-collapse-btn {
+  padding: 4px 9px;
+  border-radius: 7px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(30, 41, 59, 0.85);
+  color: #cbd5e1;
+  font-size: 0.72rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ulo-collapse-btn:hover {
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+.ulo-panel-body {
+  margin-top: 10px;
+}
+
 .ulo-section-label {
-  font-size: 0.76rem;
-  color: #94a3b8;
-  margin: 10px 0 6px 0;
   display: block;
+  margin: 8px 0 5px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #94a3b8;
 }
 
 .ulo-basemap-select {
@@ -70,87 +144,223 @@
   padding: 7px 10px;
   border-radius: 8px;
   border: 1px solid rgba(148, 163, 184, 0.3);
-  background: rgba(30, 41, 59, 0.95);
-  color: #f8fafc;
+  background: #0f172a;
+  color: #f1f5f9;
+  font-size: 0.78rem;
   font-family: inherit;
-  font-size: 0.8rem;
   cursor: pointer;
+}
+
+.ulo-basemap-select:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* Quick layer preset actions */
+.ulo-quick-actions {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0 6px;
+}
+
+.ulo-quick-btn {
+  flex: 1;
+  padding: 5px 6px;
+  border-radius: 7px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(30, 41, 59, 0.75);
+  color: #cbd5e1;
+  font-size: 0.71rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+
+.ulo-quick-btn:hover {
+  border-color: #38bdf8;
+  color: #ffffff;
+  background: rgba(14, 116, 144, 0.4);
+}
+
+/* Layer Category Group */
+.ulo-category-group {
+  margin-top: 8px;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+  padding-top: 6px;
+}
+
+.ulo-category-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  padding: 4px 2px;
+  color: #7dd3fc;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ulo-category-items {
+  margin-top: 4px;
+}
+
+.ulo-layer-card {
+  padding: 6px 7px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  background: rgba(30, 41, 59, 0.38);
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.ulo-layer-card.is-active {
+  background: rgba(30, 41, 59, 0.72);
+  border-color: rgba(56, 189, 248, 0.22);
 }
 
 .ulo-layer-item {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  margin: 8px 0;
-  font-size: 0.8rem;
   cursor: pointer;
-  user-select: none;
-  line-height: 1.5;
+}
+
+.ulo-layer-item input[type='checkbox'] {
+  margin-top: 3px;
+  accent-color: #38bdf8;
+  cursor: pointer;
 }
 
 .ulo-legend-swatch {
-  width: 12px;
-  height: 12px;
-  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-top: 3px;
   flex-shrink: 0;
-  margin-top: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .ulo-layer-text {
   display: flex;
   flex-direction: column;
+  gap: 2px;
+  flex: 1;
 }
 
 .ulo-layer-name {
-  color: #e2e8f0;
+  font-size: 0.79rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  line-height: 1.3;
 }
 
 .ulo-layer-desc {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
+  color: #94a3b8;
+  line-height: 1.35;
+}
+
+.ulo-opacity-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  padding-top: 4px;
+  border-top: 1px dashed rgba(148, 163, 184, 0.15);
+  font-size: 0.68rem;
   color: #94a3b8;
 }
 
-.ulo-coords-bar {
-  position: absolute;
-  bottom: 42px;
-  left: 14px;
-  z-index: 5;
-  background: rgba(15, 23, 42, 0.88);
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  color: #e2e8f0;
-  padding: 5px 12px;
-  border-radius: 8px;
-  font-size: 0.74rem;
-  direction: ltr;
-  font-family: monospace;
+.ulo-opacity-slider {
+  flex: 1;
+  height: 4px;
+  accent-color: #38bdf8;
+  cursor: pointer;
+}
+
+/* Dynamic Shoreline Legend Pill */
+.ulo-shoreline-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 5px;
+  font-size: 0.66rem;
+  color: #cbd5e1;
+}
+
+.ulo-shoreline-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(15, 23, 42, 0.75);
+}
+
+.ulo-shoreline-dot {
+  width: 8px;
+  height: 3px;
+  border-radius: 2px;
 }
 
 .ulo-status-badge {
-  margin-top: 10px;
-  padding-top: 8px;
-  border-top: 1px solid rgba(148, 163, 184, 0.18);
+  margin-top: 9px;
+  padding: 6px 9px;
+  border-radius: 8px;
   font-size: 0.72rem;
-  color: #94a3b8;
+  background: rgba(2, 132, 199, 0.18);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.25);
 }
 
 .ulo-error-box {
   margin-top: 8px;
-  padding: 6px 8px;
-  border-radius: 6px;
-  background: rgba(239, 68, 68, 0.18);
-  border: 1px solid rgba(239, 68, 68, 0.45);
-  color: #fca5a5;
+  padding: 6px 9px;
+  border-radius: 8px;
   font-size: 0.72rem;
-  line-height: 1.6;
+  background: rgba(220, 38, 38, 0.2);
+  color: #fca5a5;
+  border: 1px solid rgba(248, 113, 113, 0.35);
 }
 
-.maplibregl-popup-content {
-  background: rgba(15, 23, 42, 0.96) !important;
-  color: #f8fafc !important;
-  border-radius: 10px !important;
-  border: 1px solid rgba(56, 189, 248, 0.35);
-  font-family: 'Vazirmatn', 'Inter', 'Tahoma', sans-serif !important;
-  padding: 10px 12px !important;
+.ulo-coords-bar {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  z-index: 10;
+  padding: 5px 11px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  color: #cbd5e1;
+  font-size: 0.73rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  direction: ltr;
+}
+
+/* MapLibre Scientific Popup Styling */
+.ulo-popup .maplibregl-popup-content {
+  background: rgba(15, 23, 42, 0.96);
+  color: #f8fafc;
+  border: 1px solid rgba(56, 189, 248, 0.42);
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.58);
+  max-width: 340px;
+}
+
+.ulo-popup .maplibregl-popup-tip {
+  border-top-color: rgba(15, 23, 42, 0.96) !important;
+  border-bottom-color: rgba(15, 23, 42, 0.96) !important;
+}
+
+.ulo-popup .maplibregl-popup-close-button {
+  color: #94a3b8;
+  font-size: 18px;
+  padding: 4px 8px;
 }
 
 .ulo-popup-body.is-rtl {
@@ -165,16 +375,21 @@
 
 .ulo-popup-title {
   font-weight: 700;
+  font-size: 0.9rem;
   color: #38bdf8;
-  font-size: 0.85rem;
   margin-bottom: 3px;
   padding-inline-end: 16px;
 }
 
 .ulo-popup-layer {
-  font-size: 0.7rem;
-  color: #94a3b8;
-  margin-bottom: 6px;
+  display: inline-block;
+  font-size: 0.68rem;
+  color: #cbd5e1;
+  background: rgba(30, 41, 59, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 6px;
+  padding: 2px 7px;
+  margin-bottom: 8px;
 }
 
 .ulo-popup-table {
@@ -184,36 +399,32 @@
 }
 
 .ulo-popup-table td {
-  padding: 3px 5px;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  padding: 4px 3px;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
   vertical-align: top;
 }
 
 .ulo-popup-key {
   color: #94a3b8;
-  font-weight: 600;
+  padding-inline-end: 8px;
   white-space: nowrap;
-  direction: ltr;
+  font-weight: 500;
 }
 
-.maplibregl-popup-close-button {
-  color: #94a3b8 !important;
-  font-size: 1.1rem;
-  padding: 2px 6px !important;
+.ulo-popup-val {
+  color: #f1f5f9;
+  font-weight: 600;
 }
 
-.maplibregl-ctrl-attrib,
-.maplibregl-ctrl-scale {
-  font-family: 'Vazirmatn', 'Inter', 'Tahoma', sans-serif !important;
-  font-size: 0.65rem !important;
-}
-
-@media (max-width: 820px) {
-  .ulo-layer-panel {
-    width: 255px;
-    padding: 10px 12px;
-  }
+@media (max-width: 900px) {
   .ulo-map-wrapper {
-    height: 62vh;
+    height: 580px;
+  }
+  .ulo-bookmarks-bar {
+    display: none;
+  }
+  .ulo-layer-panel {
+    width: 280px;
+    max-height: 56%;
   }
 }

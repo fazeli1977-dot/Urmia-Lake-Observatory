@@ -1,0 +1,801 @@
+{
+  "schema_version": "3.2.0",
+  "generated_at_utc": "2026-11-24T07:09:33.636542+00:00",
+  "lake_name": "Lake Urmia",
+  "identifiers": {
+    "cdse_clms_station_id": "1300000000142",
+    "hydroweb_id": "L_urmia@hysope2:5f34e157-1477-32c3-b2f9-b4d0b990e991:V1",
+    "usda_grealm_id": "0053"
+  },
+  "data_provenance": {
+    "water_level_mode": "calibrated_hypsometric_era5",
+    "stac_metadata_live": true,
+    "climate_era5_live": true,
+    "credentials_configured": {
+      "HYDROWEB_API_KEY": false,
+      "CDSE_OIDC": false
+    }
+  },
+  "current_status": {
+    "observation_date": "2026-11-19",
+    "water_level_m_asl": 1269.757,
+    "ecological_target_m_asl": 1274.1,
+    "ecological_deficit_m": 4.343,
+    "estimated_area_km2": 405.42,
+    "estimated_volume_km3": 0.241,
+    "ecological_volume_deficit_km3": 13.209,
+    "trailing_12m_precip_mm": 286.5,
+    "trailing_12m_et0_mm": 1109.4
+  },
+  "stac_live_catalog": {
+    "checked_at_utc": "2026-11-24T07:08:50.891411+00:00",
+    "cdse_clms_wl": {
+      "reachable": true,
+      "station_id": "1300000000142",
+      "latest_product_id": "c_gls_WL_202611191831_1300000000142_ALTI_V2.2.2_geojson",
+      "bbox": [
+        45.5,
+        37.67,
+        45.5,
+        37.67
+      ],
+      "start_datetime": "1992-09-28T22:30:00.000000Z",
+      "odata_href": "https://download.dataspace.copernicus.eu/odata/v1/Products(ad7180f1-4e1e-41cf-96c6-c172271c4606)/Nodes(c_gls_WL_202611191831_1300000000142_ALTI_V2.2.2_geojson)/Nodes(c_gls_WL_202611191831_1300000000142_ALTI_V2.2.2.json)/$value",
+      "requires_oidc_auth": true,
+      "recent_products_count": 3
+    },
+    "hydroweb_ope": {
+      "reachable": true,
+      "item_id": "L_urmia@hysope2:5f34e157-1477-32c3-b2f9-b4d0b990e991:V1",
+      "start_datetime": "1992-09-28T22:30:00Z",
+      "end_datetime": "2026-11-19T18:31:00Z",
+      "updated_datetime": "2026-11-23T12:32:29.530834Z",
+      "asset_href": "https://hydroweb.next.theia-land.fr/api/v1/rs-catalog/downloads/URN:FEATURE:DATA:hysope2:5f34e157-1477-32c3-b2f9-b4d0b990e991:V1/files/6ac91626b74bf54ffebfca76e74bebb6?scope=hysope2"
+    }
+  },
+  "hypsometry_curve": [
+    {
+      "elevation_m": 1269.8,
+      "area_km2": 420.0,
+      "volume_km3": 0.25
+    },
+    {
+      "elevation_m": 1270.0,
+      "area_km2": 680.0,
+      "volume_km3": 0.45
+    },
+    {
+      "elevation_m": 1270.3,
+      "area_km2": 1120.0,
+      "volume_km3": 0.85
+    },
+    {
+      "elevation_m": 1270.6,
+      "area_km2": 1580.0,
+      "volume_km3": 1.38
+    },
+    {
+      "elevation_m": 1271.0,
+      "area_km2": 2150.0,
+      "volume_km3": 2.15
+    },
+    {
+      "elevation_m": 1271.5,
+      "area_km2": 2780.0,
+      "volume_km3": 3.38
+    },
+    {
+      "elevation_m": 1272.0,
+      "area_km2": 3310.0,
+      "volume_km3": 4.9
+    },
+    {
+      "elevation_m": 1273.0,
+      "area_km2": 4120.0,
+      "volume_km3": 8.62
+    },
+    {
+      "elevation_m": 1274.1,
+      "area_km2": 4680.0,
+      "volume_km3": 13.45
+    },
+    {
+      "elevation_m": 1275.0,
+      "area_km2": 5050.0,
+      "volume_km3": 17.85
+    },
+    {
+      "elevation_m": 1276.0,
+      "area_km2": 5420.0,
+      "volume_km3": 23.1
+    },
+    {
+      "elevation_m": 1277.5,
+      "area_km2": 5880.0,
+      "volume_km3": 31.6
+    },
+    {
+      "elevation_m": 1278.4,
+      "area_km2": 6100.0,
+      "volume_km3": 37.0
+    }
+  ],
+  "water_level_timeseries": [
+    {
+      "date": "1995-05-15",
+      "water_level_m": 1278.38,
+      "area_km2": 6095.11,
+      "volume_km3": 36.88,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "1998-06-01",
+      "water_level_m": 1277.65,
+      "area_km2": 5916.67,
+      "volume_km3": 32.5,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2001-09-15",
+      "water_level_m": 1274.85,
+      "area_km2": 4988.33,
+      "volume_km3": 17.117,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2004-05-15",
+      "water_level_m": 1275.42,
+      "area_km2": 5205.4,
+      "volume_km3": 20.055,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2007-09-15",
+      "water_level_m": 1273.8,
+      "area_km2": 4527.27,
+      "volume_km3": 12.133,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2010-09-15",
+      "water_level_m": 1272.05,
+      "area_km2": 3350.5,
+      "volume_km3": 5.086,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2013-09-15",
+      "water_level_m": 1270.62,
+      "area_km2": 1608.5,
+      "volume_km3": 1.418,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2015-09-20",
+      "water_level_m": 1270.08,
+      "area_km2": 797.33,
+      "volume_km3": 0.557,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2016-06-01",
+      "water_level_m": 1270.78,
+      "area_km2": 1836.5,
+      "volume_km3": 1.727,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2018-09-25",
+      "water_level_m": 1270.18,
+      "area_km2": 944.0,
+      "volume_km3": 0.69,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2019-05-25",
+      "water_level_m": 1271.88,
+      "area_km2": 3182.8,
+      "volume_km3": 4.535,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2020-05-20",
+      "water_level_m": 1271.92,
+      "area_km2": 3225.2,
+      "volume_km3": 4.657,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2021-09-25",
+      "water_level_m": 1270.68,
+      "area_km2": 1694.0,
+      "volume_km3": 1.534,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2022-09-25",
+      "water_level_m": 1270.22,
+      "area_km2": 1002.67,
+      "volume_km3": 0.743,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2023-09-25",
+      "water_level_m": 1269.96,
+      "area_km2": 628.0,
+      "volume_km3": 0.41,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2024-05-15",
+      "water_level_m": 1270.52,
+      "area_km2": 1457.33,
+      "volume_km3": 1.239,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2024-10-01",
+      "water_level_m": 1270.05,
+      "area_km2": 753.33,
+      "volume_km3": 0.517,
+      "source": "published_altimetry_benchmark"
+    },
+    {
+      "date": "2024-11-15",
+      "water_level_m": 1270.037,
+      "area_km2": 734.96,
+      "volume_km3": 0.5,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2024-12-15",
+      "water_level_m": 1270.054,
+      "area_km2": 759.53,
+      "volume_km3": 0.522,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-01-15",
+      "water_level_m": 1270.049,
+      "area_km2": 752.31,
+      "volume_km3": 0.516,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-02-15",
+      "water_level_m": 1270.085,
+      "area_km2": 804.45,
+      "volume_km3": 0.563,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-03-15",
+      "water_level_m": 1270.095,
+      "area_km2": 819.87,
+      "volume_km3": 0.577,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-04-15",
+      "water_level_m": 1270.073,
+      "area_km2": 786.76,
+      "volume_km3": 0.547,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-05-15",
+      "water_level_m": 1270.002,
+      "area_km2": 683.53,
+      "volume_km3": 0.453,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-06-15",
+      "water_level_m": 1269.881,
+      "area_km2": 525.41,
+      "volume_km3": 0.331,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-07-15",
+      "water_level_m": 1269.75,
+      "area_km2": 403.2,
+      "volume_km3": 0.24,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-08-15",
+      "water_level_m": 1269.75,
+      "area_km2": 403.2,
+      "volume_km3": 0.24,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-09-15",
+      "water_level_m": 1269.75,
+      "area_km2": 403.2,
+      "volume_km3": 0.24,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-10-15",
+      "water_level_m": 1269.75,
+      "area_km2": 403.2,
+      "volume_km3": 0.24,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-11-15",
+      "water_level_m": 1269.75,
+      "area_km2": 403.2,
+      "volume_km3": 0.24,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2025-12-15",
+      "water_level_m": 1269.847,
+      "area_km2": 480.93,
+      "volume_km3": 0.297,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-01-15",
+      "water_level_m": 1269.89,
+      "area_km2": 536.5,
+      "volume_km3": 0.34,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-02-15",
+      "water_level_m": 1269.92,
+      "area_km2": 575.58,
+      "volume_km3": 0.37,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-03-15",
+      "water_level_m": 1270.076,
+      "area_km2": 791.57,
+      "volume_km3": 0.551,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-04-15",
+      "water_level_m": 1270.125,
+      "area_km2": 863.74,
+      "volume_km3": 0.617,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-05-15",
+      "water_level_m": 1270.096,
+      "area_km2": 820.52,
+      "volume_km3": 0.578,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-06-15",
+      "water_level_m": 1269.975,
+      "area_km2": 646.86,
+      "volume_km3": 0.425,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-07-15",
+      "water_level_m": 1269.837,
+      "area_km2": 468.17,
+      "volume_km3": 0.287,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-08-15",
+      "water_level_m": 1269.75,
+      "area_km2": 403.2,
+      "volume_km3": 0.24,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-09-15",
+      "water_level_m": 1269.75,
+      "area_km2": 403.2,
+      "volume_km3": 0.24,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-10-15",
+      "water_level_m": 1269.75,
+      "area_km2": 403.2,
+      "volume_km3": 0.24,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-11-15",
+      "water_level_m": 1269.757,
+      "area_km2": 405.42,
+      "volume_km3": 0.241,
+      "source": "calibrated_hypsometric_era5_balance"
+    },
+    {
+      "date": "2026-11-19",
+      "water_level_m": 1269.757,
+      "area_km2": 405.42,
+      "volume_km3": 0.241,
+      "source": "calibrated_hypsometric_era5_at_stac_overpass"
+    }
+  ],
+  "basin_climate_era5": {
+    "monthly_summary": [
+      {
+        "month": "2024-09",
+        "precip_mm": 1.5,
+        "et0_mm": 77.9,
+        "net_water_flux_mm": -76.4,
+        "temp_mean_c": 11.88
+      },
+      {
+        "month": "2024-10",
+        "precip_mm": 7.8,
+        "et0_mm": 74.7,
+        "net_water_flux_mm": -66.9,
+        "temp_mean_c": 6.7
+      },
+      {
+        "month": "2024-11",
+        "precip_mm": 5.7,
+        "et0_mm": 36.0,
+        "net_water_flux_mm": -30.3,
+        "temp_mean_c": -0.0
+      },
+      {
+        "month": "2024-12",
+        "precip_mm": 13.9,
+        "et0_mm": 22.1,
+        "net_water_flux_mm": -8.2,
+        "temp_mean_c": -5.64
+      },
+      {
+        "month": "2025-01",
+        "precip_mm": 4.4,
+        "et0_mm": 21.2,
+        "net_water_flux_mm": -16.8,
+        "temp_mean_c": -7.29
+      },
+      {
+        "month": "2025-02",
+        "precip_mm": 23.0,
+        "et0_mm": 25.7,
+        "net_water_flux_mm": -2.7,
+        "temp_mean_c": -8.34
+      },
+      {
+        "month": "2025-03",
+        "precip_mm": 23.9,
+        "et0_mm": 63.4,
+        "net_water_flux_mm": -39.5,
+        "temp_mean_c": 0.45
+      },
+      {
+        "month": "2025-04",
+        "precip_mm": 19.5,
+        "et0_mm": 95.0,
+        "net_water_flux_mm": -75.5,
+        "temp_mean_c": 6.14
+      },
+      {
+        "month": "2025-05",
+        "precip_mm": 13.8,
+        "et0_mm": 142.8,
+        "net_water_flux_mm": -129.0,
+        "temp_mean_c": 12.0
+      },
+      {
+        "month": "2025-06",
+        "precip_mm": 1.5,
+        "et0_mm": 173.4,
+        "net_water_flux_mm": -171.9,
+        "temp_mean_c": 14.73
+      },
+      {
+        "month": "2025-07",
+        "precip_mm": 0.0,
+        "et0_mm": 192.8,
+        "net_water_flux_mm": -192.8,
+        "temp_mean_c": 17.87
+      },
+      {
+        "month": "2025-08",
+        "precip_mm": 0.0,
+        "et0_mm": 177.0,
+        "net_water_flux_mm": -177.0,
+        "temp_mean_c": 19.09
+      },
+      {
+        "month": "2025-09",
+        "precip_mm": 0.0,
+        "et0_mm": 123.2,
+        "net_water_flux_mm": -123.2,
+        "temp_mean_c": 12.58
+      },
+      {
+        "month": "2025-10",
+        "precip_mm": 0.0,
+        "et0_mm": 81.9,
+        "net_water_flux_mm": -81.9,
+        "temp_mean_c": 8.29
+      },
+      {
+        "month": "2025-11",
+        "precip_mm": 9.5,
+        "et0_mm": 36.6,
+        "net_water_flux_mm": -27.1,
+        "temp_mean_c": 0.96
+      },
+      {
+        "month": "2025-12",
+        "precip_mm": 47.9,
+        "et0_mm": 21.8,
+        "net_water_flux_mm": 26.1,
+        "temp_mean_c": -4.49
+      },
+      {
+        "month": "2026-01",
+        "precip_mm": 24.5,
+        "et0_mm": 20.6,
+        "net_water_flux_mm": 3.8,
+        "temp_mean_c": -8.05
+      },
+      {
+        "month": "2026-02",
+        "precip_mm": 24.1,
+        "et0_mm": 36.9,
+        "net_water_flux_mm": -12.8,
+        "temp_mean_c": -1.81
+      },
+      {
+        "month": "2026-03",
+        "precip_mm": 81.5,
+        "et0_mm": 48.8,
+        "net_water_flux_mm": 32.7,
+        "temp_mean_c": -1.87
+      },
+      {
+        "month": "2026-04",
+        "precip_mm": 46.4,
+        "et0_mm": 83.1,
+        "net_water_flux_mm": -36.7,
+        "temp_mean_c": 3.7
+      },
+      {
+        "month": "2026-05",
+        "precip_mm": 26.8,
+        "et0_mm": 128.4,
+        "net_water_flux_mm": -101.6,
+        "temp_mean_c": 9.2
+      },
+      {
+        "month": "2026-06",
+        "precip_mm": 1.6,
+        "et0_mm": 173.7,
+        "net_water_flux_mm": -172.1,
+        "temp_mean_c": 15.25
+      },
+      {
+        "month": "2026-07",
+        "precip_mm": 0.0,
+        "et0_mm": 190.9,
+        "net_water_flux_mm": -190.9,
+        "temp_mean_c": 18.45
+      },
+      {
+        "month": "2026-08",
+        "precip_mm": 1.7,
+        "et0_mm": 176.7,
+        "net_water_flux_mm": -175.0,
+        "temp_mean_c": 18.15
+      },
+      {
+        "month": "2026-09",
+        "precip_mm": 1.9,
+        "et0_mm": 129.8,
+        "net_water_flux_mm": -127.9,
+        "temp_mean_c": 14.38
+      },
+      {
+        "month": "2026-10",
+        "precip_mm": 19.2,
+        "et0_mm": 72.3,
+        "net_water_flux_mm": -53.1,
+        "temp_mean_c": 9.12
+      },
+      {
+        "month": "2026-11",
+        "precip_mm": 10.9,
+        "et0_mm": 26.4,
+        "net_water_flux_mm": -15.5,
+        "temp_mean_c": 1.92
+      }
+    ],
+    "daily_tail_30d": [
+      {
+        "date": "2026-10-21",
+        "temp_mean_c": 8.4,
+        "precip_mm": 0.3,
+        "et0_mm": 2.22
+      },
+      {
+        "date": "2026-10-22",
+        "temp_mean_c": 8.4,
+        "precip_mm": 0.0,
+        "et0_mm": 2.32
+      },
+      {
+        "date": "2026-10-23",
+        "temp_mean_c": 7.6,
+        "precip_mm": 0.0,
+        "et0_mm": 2.13
+      },
+      {
+        "date": "2026-10-24",
+        "temp_mean_c": 7.7,
+        "precip_mm": 0.0,
+        "et0_mm": 2.14
+      },
+      {
+        "date": "2026-10-25",
+        "temp_mean_c": 7.0,
+        "precip_mm": 0.1,
+        "et0_mm": 2.02
+      },
+      {
+        "date": "2026-10-26",
+        "temp_mean_c": 6.8,
+        "precip_mm": 0.0,
+        "et0_mm": 1.92
+      },
+      {
+        "date": "2026-10-27",
+        "temp_mean_c": 7.9,
+        "precip_mm": 0.0,
+        "et0_mm": 2.05
+      },
+      {
+        "date": "2026-10-28",
+        "temp_mean_c": 7.8,
+        "precip_mm": 0.0,
+        "et0_mm": 2.01
+      },
+      {
+        "date": "2026-10-29",
+        "temp_mean_c": 6.9,
+        "precip_mm": 1.1,
+        "et0_mm": 1.3
+      },
+      {
+        "date": "2026-10-30",
+        "temp_mean_c": 7.6,
+        "precip_mm": 0.0,
+        "et0_mm": 2.22
+      },
+      {
+        "date": "2026-10-31",
+        "temp_mean_c": 7.4,
+        "precip_mm": 0.0,
+        "et0_mm": 2.06
+      },
+      {
+        "date": "2026-11-01",
+        "temp_mean_c": 6.8,
+        "precip_mm": 0.0,
+        "et0_mm": 1.85
+      },
+      {
+        "date": "2026-11-02",
+        "temp_mean_c": 6.4,
+        "precip_mm": 0.3,
+        "et0_mm": 1.64
+      },
+      {
+        "date": "2026-11-03",
+        "temp_mean_c": 5.9,
+        "precip_mm": 0.5,
+        "et0_mm": 1.42
+      },
+      {
+        "date": "2026-11-04",
+        "temp_mean_c": 6.4,
+        "precip_mm": 0.0,
+        "et0_mm": 2.01
+      },
+      {
+        "date": "2026-11-05",
+        "temp_mean_c": 5.6,
+        "precip_mm": 0.2,
+        "et0_mm": 2.09
+      },
+      {
+        "date": "2026-11-06",
+        "temp_mean_c": 4.6,
+        "precip_mm": 2.4,
+        "et0_mm": 1.79
+      },
+      {
+        "date": "2026-11-07",
+        "temp_mean_c": 3.5,
+        "precip_mm": 3.0,
+        "et0_mm": 1.25
+      },
+      {
+        "date": "2026-11-08",
+        "temp_mean_c": 2.3,
+        "precip_mm": 0.3,
+        "et0_mm": 1.63
+      },
+      {
+        "date": "2026-11-09",
+        "temp_mean_c": -2.8,
+        "precip_mm": 0.9,
+        "et0_mm": 1.51
+      },
+      {
+        "date": "2026-11-10",
+        "temp_mean_c": -4.0,
+        "precip_mm": 0.0,
+        "et0_mm": 1.17
+      },
+      {
+        "date": "2026-11-11",
+        "temp_mean_c": -3.4,
+        "precip_mm": 0.0,
+        "et0_mm": 0.89
+      },
+      {
+        "date": "2026-11-12",
+        "temp_mean_c": -2.1,
+        "precip_mm": 0.0,
+        "et0_mm": 1.05
+      },
+      {
+        "date": "2026-11-13",
+        "temp_mean_c": -0.5,
+        "precip_mm": 0.0,
+        "et0_mm": 1.11
+      },
+      {
+        "date": "2026-11-14",
+        "temp_mean_c": 0.3,
+        "precip_mm": 0.0,
+        "et0_mm": 1.12
+      },
+      {
+        "date": "2026-11-15",
+        "temp_mean_c": 1.5,
+        "precip_mm": 0.9,
+        "et0_mm": 1.21
+      },
+      {
+        "date": "2026-11-16",
+        "temp_mean_c": 0.9,
+        "precip_mm": 0.8,
+        "et0_mm": 1.06
+      },
+      {
+        "date": "2026-11-17",
+        "temp_mean_c": 1.0,
+        "precip_mm": 0.0,
+        "et0_mm": 1.12
+      },
+      {
+        "date": "2026-11-18",
+        "temp_mean_c": 1.9,
+        "precip_mm": 0.4,
+        "et0_mm": 1.17
+      },
+      {
+        "date": "2026-11-19",
+        "temp_mean_c": 2.2,
+        "precip_mm": 1.2,
+        "et0_mm": 1.34
+      }
+    ]
+  }
+}

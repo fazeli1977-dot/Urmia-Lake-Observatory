@@ -1,0 +1,74 @@
+[
+  {
+    "id": "nasa_power_daily",
+    "kind": "climate",
+    "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,PRECTOTCORR&community=AG&longitude=45.35&latitude=37.70&start=20240101&end=20240131&format=JSON",
+    "expect": "JSON with properties.parameter.T2M",
+    "status": 200,
+    "content_type": "application/json",
+    "elapsed_s": 1.37,
+    "preview": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[45.35,37.7,1350.44]},\"properties\":{\"parameter\":{\"T2M\":{\"20240101\":5.05,\"20240102\":4.95,\"20240103\":3.51,\"20240104\":3.46,\"20240105\":4.5,\"20240106\":3.75,\"20240107\":2.79,\"20240108\":4.49,\"20240109\":4.75,\"20240110\":4.71,\"20240111\":2.77,\"20240112\":3.51,\"20240113\":3.34,\"20240114\":2.88,\"20240115\":1.82,\"20240116\":1.0,\"20240117\":3.02,\"20240118\":4.31",
+    "error": null,
+    "json_ok": true
+  },
+  {
+    "id": "open_meteo_era5_archive",
+    "kind": "climate",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=37.70&longitude=45.35&start_date=2024-01-01&end_date=2024-01-31&daily=temperature_2m_mean,precipitation_sum&timezone=UTC",
+    "expect": "JSON with daily.time",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "elapsed_s": 0.75,
+    "preview": "{\"latitude\":37.71529,\"longitude\":45.240643,\"generationtime_ms\":0.08189678192138672,\"utc_offset_seconds\":0,\"timezone\":\"GMT\",\"timezone_abbreviation\":\"GMT\",\"elevation\":1268.0,\"daily_units\":{\"time\":\"iso8601\",\"temperature_2m_mean\":\"°C\",\"precipitation_sum\":\"mm\"},\"daily\":{\"time\":[\"2024-01-01\",\"2024-01-02\",\"2024-01-03\",\"2024-01-04\",\"2024-01-05\",\"2024-01-06\",\"2024-01-07\",\"2024-01-08\",\"2024-01-09\",\"2024-01-",
+    "error": null,
+    "json_ok": true
+  },
+  {
+    "id": "usda_grealm_chart_page",
+    "kind": "waterlevel",
+    "url": "https://ipad.fas.usda.gov/cropexplorer/global_reservoir/gr_regional_chart.aspx?regionid=me&reservoir_name=Urmia",
+    "expect": "HTML page (200) or 404 - tells us if regionid/reservoir_name is right",
+    "status": 503,
+    "content_type": "text/html",
+    "elapsed_s": 3.31,
+    "preview": "ï»¿ <!doctype html> <html lang=\"en\"> <head> <meta charset=\"utf-8\" /> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" /> <title>IPAD retired ï¿½ USDA FAS production site</title> <style> :root { --bg: #f4f6f8; --card-bg: #ffffff; --border: #e1e6ea; --text: #111; --muted: #6b7780;",
+    "error": null,
+    "json_ok": false
+  },
+  {
+    "id": "usda_grealm_data_page",
+    "kind": "waterlevel",
+    "url": "https://ipad.fas.usda.gov/cropexplorer/global_reservoir/",
+    "expect": "HTML or plain text",
+    "status": 503,
+    "content_type": "text/html",
+    "elapsed_s": 1.41,
+    "preview": "ï»¿ <!doctype html> <html lang=\"en\"> <head> <meta charset=\"utf-8\" /> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" /> <title>IPAD retired ï¿½ USDA FAS production site</title> <style> :root { --bg: #f4f6f8; --card-bg: #ffffff; --border: #e1e6ea; --text: #111; --muted: #6b7780;",
+    "error": null,
+    "json_ok": false
+  },
+  {
+    "id": "cdse_stac",
+    "kind": "stac",
+    "url": "https://catalogue.dataspace.copernicus.eu/stac",
+    "expect": "JSON STAC landing page",
+    "status": 200,
+    "content_type": "application/json",
+    "elapsed_s": 0.8,
+    "preview": "{\"type\":\"Catalog\",\"id\":\"cdse-stac\",\"title\":\"Copernicus Data Space Ecosystem (CDSE) asset-level STAC catalogue\",\"description\":\"A comprehensive and searchable catalog of Earth observation and scientific datasets that is actively maintained and updated by the Copernicus Data Space Ecosystem. The integrated STAC (SpatioTemporal Asset Catalog) API, which follows the open STAC specification, enables use",
+    "error": null,
+    "json_ok": true
+  },
+  {
+    "id": "hydroweb_next_root",
+    "kind": "waterlevel",
+    "url": "https://hydroweb.next.theia-land.fr/api/",
+    "expect": "200 JSON => open; 401/403 => token required",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_s": 1.54,
+    "preview": "<!DOCTYPE html><html class=\"m-0 h-full p-0\" lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/2o_-j7pd5q4ol.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/0n8dmvv8w5xed.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_ne",
+    "error": null,
+    "json_ok": false
+  }
+]
