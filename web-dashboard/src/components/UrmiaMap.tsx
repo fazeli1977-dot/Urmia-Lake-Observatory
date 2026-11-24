@@ -608,7 +608,7 @@ export default function UrmiaMap({ lang }: UrmiaMapProps) {
       await Promise.all(
         LAYER_CONFIGS.map(async (cfg) => {
           try {
-            const response = await fetch('/geo/' + cfg.fileName);
+            const response = await fetch(import.meta.env.BASE_URL + 'geo/' + cfg.fileName);
             if (!response.ok) {
               throw new Error(cfg.fileName + ' (HTTP ' + response.status + ')');
             }

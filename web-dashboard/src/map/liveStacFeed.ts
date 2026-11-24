@@ -45,7 +45,7 @@ export async function fetchUrmiaLiveStacFeed(
   }
 
   try {
-    const res = await fetch(`/data/urmia_live_stac_feed.json?v=phase4_mosaic_v2`, {
+    const res = await fetch(`${import.meta.env.BASE_URL}data/urmia_live_stac_feed.json?v=phase4_mosaic_v2`, {
       signal,
       headers: { Accept: 'application/json' },
     });
