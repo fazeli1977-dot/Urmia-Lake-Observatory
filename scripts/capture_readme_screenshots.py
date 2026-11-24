@@ -206,11 +206,11 @@ def main() -> None:
             (
                 "03-hydrology-climate-charts.png",
                 """
-                const charts = Array.from(document.querySelectorAll('canvas')).filter(c => !c.closest('.maplibregl-map'));
+                const charts = Array.from(document.querySelectorAll('canvas')).filter(c => !c.closest('.maplibregl-map') && c.getBoundingClientRect().height > 120); if (charts.length === 0) { window.scrollTo(0, 1750); }
                 if (charts.length > 0) {
-                  const box = charts[0].closest('section, div[class*="chart"], div[class*="grid"]') || charts[0];
-                  const top = box.getBoundingClientRect().top + window.scrollY - 90;
-                  window.scrollTo(0, Math.max(0, top));
+                  const rectTop = charts[0].getBoundingClientRect().top + window.scrollY - 120; window.scrollTo(0, Math.max(1650, rectTop)); const box = null;
+                  if (box) { const top = box.getBoundingClientRect().top + window.scrollY - 90;  }
+                  
                 }
                 """,
                 2.0,
@@ -221,7 +221,7 @@ def main() -> None:
                 const el = document.getElementById('scientific-research-center');
                 if (el) {
                   const top = el.getBoundingClientRect().top + window.scrollY - 16;
-                  window.scrollTo(0, Math.max(0, top));
+                  
                 }
                 """,
                 2.0,
@@ -232,7 +232,7 @@ def main() -> None:
                 const el = document.getElementById('data-management-reports');
                 if (el) {
                   const top = el.getBoundingClientRect().top + window.scrollY - 16;
-                  window.scrollTo(0, Math.max(0, top));
+                  
                 }
                 """,
                 2.0,
